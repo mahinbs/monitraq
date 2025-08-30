@@ -116,7 +116,7 @@ class GeminiAnalyzer:
         return "\n".join(summary_parts)
     
     def _create_medical_analysis_prompt(self, analysis_summary: str) -> str:
-        """Create comprehensive medical analysis prompt for Gemini"""
+        """Create concise medical analysis prompt for Gemini (under 100 words)"""
         current_date = datetime.now().strftime('%Y-%m-%d %H:%M')
         
         # Extract modality if available
@@ -128,116 +128,54 @@ class GeminiAnalyzer:
                 modality = "Multiple modalities"
         
         return f"""
-You are Dr. AI Radiologist, an expert medical AI specialist with extensive experience in radiological interpretation and clinical diagnosis. You are writing a comprehensive medical report for a healthcare professional.
+You are Dr. AI Radiologist, an expert medical AI specialist. Generate a CONCISE medical summary (UNDER 100 WORDS) in professional doctor's report style.
 
 ANALYSIS DATA:
 {analysis_summary}
 
-Please provide a detailed, professional medical report in the following format:
+REQUIREMENTS:
+- Maximum 100 words total
+- Professional medical terminology
+- Doctor's report writing style
+- Focus on key pathological findings
+- Include clinical significance
+- Clear and actionable
 
-**MEDICAL IMAGING ANALYSIS REPORT**
-
-**PATIENT INFORMATION:**
-- Study Type: DICOM Medical Imaging Analysis
-- Modality: {modality}
-- Date of Analysis: {current_date}
-
-**EXECUTIVE SUMMARY:**
-Provide a 3-4 sentence comprehensive overview of the imaging findings, clinical significance, and overall assessment.
-
-**DETAILED FINDINGS:**
-
-1. **ANATOMICAL ASSESSMENT:**
-   - Detailed description of anatomical structures identified
-   - Normal vs. abnormal findings
-   - Specific anatomical landmarks and their clinical relevance
-
-2. **PATHOLOGICAL ANALYSIS:**
-   - Comprehensive list of detected pathologies
-   - Severity assessment for each finding
-   - Clinical correlation and significance
-
-3. **IMAGE QUALITY ASSESSMENT:**
-   - Technical quality of the imaging
-   - Artifacts or limitations identified
-   - Recommendations for image optimization
-
-**CLINICAL INTERPRETATION:**
-
-1. **PRIMARY DIAGNOSIS:**
-   - Most likely diagnosis based on findings
-   - Confidence level and supporting evidence
-
-2. **DIFFERENTIAL DIAGNOSIS:**
-   - Alternative diagnostic possibilities (list 3-5)
-   - Clinical reasoning for each differential
-   - Probability assessment for each
-
-3. **CLINICAL CORRELATION:**
-   - How findings relate to patient symptoms
-   - Clinical significance of each finding
-   - Impact on patient management
-
-**TREATMENT RECOMMENDATIONS:**
-
-1. **IMMEDIATE ACTIONS:**
-   - Urgent interventions if needed
-   - Immediate clinical decisions required
-
-2. **SPECIALIST CONSULTATIONS:**
-   - Required specialist referrals
-   - Specific expertise needed
-
-3. **FURTHER DIAGNOSTIC WORKUP:**
-   - Additional imaging studies recommended
-   - Laboratory tests if indicated
-   - Other diagnostic procedures
-
-**RISK ASSESSMENT:**
-- Overall risk level: [Low/Moderate/High]
-- Specific risk factors identified
-- Urgency of clinical attention
-- Prognostic implications
-
-**FOLLOW-UP PLAN:**
-- Recommended timeline for follow-up imaging
-- Specific monitoring requirements
-- Patient education and counseling points
-- Long-term management considerations
-
-**CLINICAL IMPRESSION:**
-Provide a final clinical impression summarizing the key findings, their significance, and the recommended course of action.
+FORMAT:
+**CLINICAL SUMMARY:**
+[Write a concise, professional medical summary under 100 words that includes:
+- Key pathological findings
+- Clinical significance
+- Brief assessment
+- Essential recommendations]
 
 **REPORT PREPARED BY:**
 Dr. AI Radiologist
-Medical AI Specialist
 Date: {current_date}
 
-Please write this report in a professional medical tone, as if written by an experienced radiologist for clinical use. Be thorough, evidence-based, and clinically actionable.
-
-IMPORTANT: Please structure your response with clear section headers and bullet points for easy parsing. Use the exact section names provided above.
+IMPORTANT: Keep the entire response under 100 words. Be concise but comprehensive. Use professional medical language.
 """
     
     def _parse_gemini_response(self, response_text: str, analysis_results: List[Dict[str, Any]]) -> GeminiAnalysis:
         """Parse Gemini response into structured analysis"""
         try:
-            # Extract sections from response
-            sections = self._extract_sections(response_text)
+            # For concise format, extract the clinical summary
+            clinical_summary = self._extract_clinical_summary(response_text)
             
-            # If parsing failed or summary is not meaningful, try to extract content from the raw response
-            if (not sections.get('summary') or 
-                sections.get('summary') == 'Analysis completed' or 
-                sections.get('summary') == 'Analysis completed.' or
-                len(sections.get('summary', '')) < 20):
-                sections = self._extract_from_raw_response(response_text)
+            # Count words to ensure it's under 100
+            word_count = len(clinical_summary.split())
+            if word_count > 100:
+                # Truncate to 100 words
+                words = clinical_summary.split()[:100]
+                clinical_summary = ' '.join(words) + '...'
             
             return GeminiAnalysis(
-                summary=sections.get('summary', 'Analysis completed'),
-                clinical_insights=sections.get('clinical_insights', []),
-                differential_diagnosis=sections.get('differential_diagnosis', []),
-                recommendations=sections.get('recommendations', []),
-                risk_assessment=sections.get('risk_assessment', 'Moderate'),
-                follow_up_plan=sections.get('follow_up_plan', 'Standard follow-up recommended'),
+                summary=clinical_summary,
+                clinical_insights=[clinical_summary],  # Use summary as main insight
+                differential_diagnosis=["Clinical correlation required"],
+                recommendations=["Follow-up imaging recommended"],
+                risk_assessment="Moderate",
+                follow_up_plan="Standard follow-up recommended",
                 ai_confidence=0.85  # High confidence for Gemini analysis
             )
             
@@ -316,105 +254,37 @@ IMPORTANT: Please structure your response with clear section headers and bullet 
         
         return sections
     
-    def _extract_sections(self, response_text: str) -> Dict[str, Any]:
-        """Extract different sections from Gemini response"""
-        sections = {}
-        
-        # Split the response into lines
-        lines = response_text.split('\n')
-        current_section = None
-        current_content = []
-        
-        for line in lines:
-            line = line.strip()
-            if not line:
-                continue
+    def _extract_clinical_summary(self, response_text: str) -> str:
+        """Extract clinical summary from concise Gemini response"""
+        try:
+            # Look for CLINICAL SUMMARY section
+            if '**CLINICAL SUMMARY:**' in response_text:
+                start_idx = response_text.find('**CLINICAL SUMMARY:**') + len('**CLINICAL SUMMARY:**')
+                end_idx = response_text.find('**REPORT PREPARED BY:**')
+                if end_idx == -1:
+                    end_idx = len(response_text)
+                
+                summary = response_text[start_idx:end_idx].strip()
+                # Clean up the summary
+                summary = summary.replace('\n', ' ').replace('  ', ' ')
+                return summary
             
-            # Detect section headers (more comprehensive)
-            if any(header in line.upper() for header in ['EXECUTIVE SUMMARY', 'CLINICAL SUMMARY']):
-                if current_section and current_content:
-                    sections[current_section] = current_content
-                current_section = 'summary'
-                current_content = []
-            elif any(header in line.upper() for header in ['CLINICAL INSIGHTS', 'DETAILED FINDINGS']):
-                if current_section and current_content:
-                    sections[current_section] = current_content
-                current_section = 'clinical_insights'
-                current_content = []
-            elif 'DIFFERENTIAL DIAGNOSIS' in line.upper():
-                if current_section and current_content:
-                    sections[current_section] = current_content
-                current_section = 'differential_diagnosis'
-                current_content = []
-            elif any(header in line.upper() for header in ['RECOMMENDATIONS', 'TREATMENT RECOMMENDATIONS']):
-                if current_section and current_content:
-                    sections[current_section] = current_content
-                current_section = 'recommendations'
-                current_content = []
-            elif 'RISK ASSESSMENT' in line.upper():
-                if current_section and current_content:
-                    sections[current_section] = current_content
-                current_section = 'risk_assessment'
-                current_content = []
-            elif 'FOLLOW-UP PLAN' in line.upper():
-                if current_section and current_content:
-                    sections[current_section] = current_content
-                current_section = 'follow_up_plan'
-                current_content = []
-            elif current_section and line:
-                # Add content to current section
-                if line.startswith('-') or line.startswith('*') or line.startswith('•'):
-                    current_content.append(line[1:].strip())
-                else:
-                    current_content.append(line)
-        
-        # Add final section
-        if current_section and current_content:
-            sections[current_section] = current_content
-        
-        # Process sections to clean up content
-        for key in sections:
-            if isinstance(sections[key], list):
-                # Remove empty items and clean up formatting
-                sections[key] = [item.strip() for item in sections[key] if item.strip() and not item.strip().startswith('**')]
-        
-        # Convert lists to appropriate format
-        for key in ['clinical_insights', 'differential_diagnosis', 'recommendations']:
-            if key in sections:
-                if isinstance(sections[key], list):
-                    sections[key] = [item for item in sections[key] if item and len(item) > 5]
-                else:
-                    sections[key] = [sections[key]] if sections[key] else []
-        
-        # Convert summary to string
-        if 'summary' in sections:
-            if isinstance(sections['summary'], list):
-                sections['summary'] = ' '.join(sections['summary'])
-        
-        # If no proper summary was found, create one from the content
-        if not sections.get('summary') or sections.get('summary') == 'Analysis completed':
-            summary_parts = []
-            if sections.get('differential_diagnosis'):
-                summary_parts.append(f"Analysis identified {len(sections['differential_diagnosis'])} potential diagnoses.")
-            if sections.get('recommendations'):
-                summary_parts.append(f"Generated {len(sections['recommendations'])} clinical recommendations.")
-            if summary_parts:
-                sections['summary'] = ' '.join(summary_parts)
-            else:
-                sections['summary'] = 'Comprehensive medical analysis completed with detailed findings and recommendations.'
-        
-        # Convert risk assessment to string if it's a list
-        if 'risk_assessment' in sections and isinstance(sections['risk_assessment'], list):
-            sections['risk_assessment'] = ' '.join(sections['risk_assessment'])
-        
-        # Convert follow-up plan to string if it's a list
-        if 'follow_up_plan' in sections and isinstance(sections['follow_up_plan'], list):
-            sections['follow_up_plan'] = ' '.join(sections['follow_up_plan'])
-        
-        return sections
+            # Fallback: extract content between asterisks or after colons
+            lines = response_text.split('\n')
+            for line in lines:
+                line = line.strip()
+                if line and not line.startswith('**') and not line.startswith('REPORT PREPARED BY'):
+                    return line
+            
+            # Final fallback
+            return "Clinical analysis completed with findings requiring medical review."
+            
+        except Exception as e:
+            logger.error(f"Error extracting clinical summary: {e}")
+            return "Clinical analysis completed with findings requiring medical review."
     
     def _generate_fallback_analysis(self, analysis_results: List[Dict[str, Any]]) -> GeminiAnalysis:
-        """Generate fallback analysis when Gemini is not available"""
+        """Generate concise fallback analysis when Gemini is not available"""
         total_files = len(analysis_results)
         
         # Collect all pathologies
@@ -426,30 +296,19 @@ IMPORTANT: Please structure your response with clear section headers and bullet 
         for pathology in all_pathologies:
             pathology_counts[pathology] = pathology_counts.get(pathology, 0) + 1
         
-        # Generate basic insights
-        clinical_insights = [
-            f"Analyzed {total_files} DICOM files successfully",
-            f"Detected {len(pathology_counts)} different types of pathologies",
-            "Image quality assessment completed",
-            "Anatomical landmarks identified",
-            "Modality-specific analysis performed"
-        ]
-        
+        # Generate concise summary (under 100 words)
         if pathology_counts:
-            clinical_insights.append(f"Most common finding: {max(pathology_counts, key=pathology_counts.get)}")
+            most_common = max(pathology_counts, key=pathology_counts.get)
+            summary = f"Analysis of {total_files} DICOM files reveals {len(pathology_counts)} pathology types. Primary finding: {most_common}. Clinical correlation required. Follow-up imaging recommended."
+        else:
+            summary = f"Analysis of {total_files} DICOM files completed. No significant pathologies detected. Standard follow-up recommended."
         
         return GeminiAnalysis(
-            summary=f"Comprehensive analysis of {total_files} DICOM files completed with {len(pathology_counts)} pathology types identified.",
-            clinical_insights=clinical_insights,
-            differential_diagnosis=["Clinical correlation required", "Further imaging may be needed", "Specialist consultation recommended"],
-            recommendations=[
-                "Review by radiologist recommended",
-                "Clinical correlation with patient history required",
-                "Consider additional imaging if clinically indicated",
-                "Follow-up imaging recommended in 3-6 months",
-                "Ensure proper documentation of findings"
-            ],
-            risk_assessment="Moderate - requires clinical correlation",
-            follow_up_plan="Standard follow-up imaging recommended in 3-6 months with clinical correlation",
+            summary=summary,
+            clinical_insights=[summary],
+            differential_diagnosis=["Clinical correlation required"],
+            recommendations=["Follow-up imaging recommended"],
+            risk_assessment="Moderate",
+            follow_up_plan="Standard follow-up recommended",
             ai_confidence=0.75
         )

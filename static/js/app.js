@@ -30,6 +30,8 @@ class DICOMAnalyzer {
         this.studyDescription = document.getElementById('studyDescription');
         this.landmarksList = document.getElementById('landmarksList');
         this.pathologiesList = document.getElementById('pathologiesList');
+        this.measurementsList = document.getElementById('measurementsList');
+        this.locationsList = document.getElementById('locationsList');
         this.recommendationsList = document.getElementById('recommendationsList');
 
         // Error elements
@@ -388,6 +390,23 @@ class DICOMAnalyzer {
         this.stopProgressAnimation();
     }
 
+    showAIAnalysisButtons() {
+        // Show the top AI Analysis button in the header
+        const aiAnalyzeBtnTop = document.getElementById('aiAnalyzeBtnTop');
+        if (aiAnalyzeBtnTop) {
+            aiAnalyzeBtnTop.style.display = 'inline-flex';
+        }
+
+        // Show the bottom AI Analysis section
+        const bottomAIAnalysis = document.querySelector('.bottom-ai-analysis');
+        if (bottomAIAnalysis) {
+            bottomAIAnalysis.style.display = 'block';
+        }
+
+        // Store current analysis result for AI analysis
+        window.currentAnalysisResult = this.lastAnalysisResult;
+    }
+
     showError(message) {
         this.hideAllSections();
         this.errorSection.style.display = 'block';
@@ -411,6 +430,42 @@ class DICOMAnalyzer {
     }
 
     displayResults(result) {
+        // 🔒 CRITICAL: Patient isolation and cache busting
+        console.log('🔒 PATIENT ISOLATION: Starting safe display process');
+        console.log('🔄 Session ID:', result.session_id);
+        console.log('🔐 Session Checksum:', result.session_checksum);
+        console.log('🆔 Analysis ID:', result.analysis_id);
+        console.log('⏰ Timestamp:', result.timestamp);
+        
+        // Create expected patient data for validation
+        const expectedPatient = {
+            name: result.patient_info?.name,
+            patient_id: result.patient_info?.patient_id, 
+            body_part: result.body_part
+        };
+        
+        // Create isolated session for this patient
+        if (window.patientIsolation) {
+            const sessionId = window.patientIsolation.createIsolatedSession(expectedPatient);
+            console.log('🔒 Created isolated session:', sessionId);
+            
+            // Validate patient isolation safety
+            if (!window.patientIsolation.safeDisplayResults(result, expectedPatient)) {
+                console.error('🚨 BLOCKED: Unsafe to display - patient isolation failed');
+                return;
+            }
+        }
+        
+        // Clear any cached display data  
+        if (result.force_refresh || result.patient_isolation) {
+            console.log('🚨 FORCE REFRESH: Clearing cached display data for patient safety');
+            localStorage.removeItem('lastDisplayedResults');
+            // Force DOM update
+            setTimeout(() => {
+                this.forceDisplayUpdate(result);
+            }, 100);
+        }
+        
         // Store the result for later use
         this.lastAnalysisResult = result;
 
@@ -456,10 +511,23 @@ class DICOMAnalyzer {
         this.updateList(this.landmarksList, result.anatomical_landmarks, 'landmark-item');
 
         // Update pathologies
+        console.log('Pathologies received:', result.pathologies);
+        console.log('First pathology:', result.pathologies?.[0]);
         this.updateList(this.pathologiesList, result.pathologies, 'pathology-item');
+
+        // Update measurements
+        console.log('Measurements received:', result.measurements);
+        this.updateKeyValueList(this.measurementsList, result.measurements, 'measurement-item');
+
+        // Update locations
+        console.log('Locations received:', result.locations);
+        this.updateKeyValueList(this.locationsList, result.locations, 'location-item');
 
         // Update recommendations
         this.updateList(this.recommendationsList, result.recommendations, 'recommendation-item');
+
+        // Show AI Analysis buttons
+        this.showAIAnalysisButtons();
 
         // Show results
         this.showResults();
@@ -474,15 +542,31 @@ class DICOMAnalyzer {
     }
 
     updateList(container, items, className) {
+        console.log(`🔍 updateList called with ${items?.length || 0} items for ${className}`);
+        console.log('📋 Items:', items);
+        
         container.innerHTML = '';
 
         if (items && items.length > 0) {
-            items.forEach(item => {
+            items.forEach((item, index) => {
                 const element = document.createElement('div');
                 element.className = className;
-                element.textContent = item;
+                
+                // Enhanced display for pathologies
+                if (className === 'pathology-item') {
+                    element.innerHTML = `<strong>${index + 1}.</strong> ${item}`;
+                    element.style.marginBottom = '8px';
+                    element.style.padding = '5px';
+                    element.style.borderLeft = '3px solid #007bff';
+                } else {
+                    element.textContent = item;
+                }
+                
                 container.appendChild(element);
+                console.log(`✅ Added ${className} ${index + 1}: ${item.substring(0, 50)}...`);
             });
+            
+            console.log(`🎉 Successfully displayed ${items.length} ${className} items`);
         } else {
             const noData = document.createElement('p');
             noData.className = 'no-data';
@@ -490,7 +574,124 @@ class DICOMAnalyzer {
                 container.id.includes('pathologies') ? 'No pathologies detected' :
                     'No recommendations available';
             container.appendChild(noData);
+            console.log(`⚠️ No ${className} items to display`);
         }
+    }
+
+    updateKeyValueList(container, items, className) {
+        console.log(`🔍 updateKeyValueList called with ${Object.keys(items || {}).length} items for ${className}`);
+        console.log('📋 Key-Value Items:', items);
+        
+        container.innerHTML = '';
+
+        if (items && typeof items === 'object' && Object.keys(items).length > 0) {
+            Object.entries(items).forEach(([key, value], index) => {
+                const element = document.createElement('div');
+                element.className = className;
+                
+                // Format the key nicely
+                const formattedKey = key.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                
+                // Enhanced display for measurements and locations
+                if (className === 'measurement-item') {
+                    element.innerHTML = `<strong>${formattedKey}:</strong> ${value}`;
+                    element.style.marginBottom = '6px';
+                    element.style.padding = '4px 8px';
+                    element.style.backgroundColor = '#f8f9fa';
+                    element.style.borderRadius = '4px';
+                    element.style.borderLeft = '3px solid #28a745';
+                } else if (className === 'location-item') {
+                    element.innerHTML = `<strong>${formattedKey}:</strong> ${value}`;
+                    element.style.marginBottom = '6px';
+                    element.style.padding = '4px 8px';
+                    element.style.backgroundColor = '#fff3cd';
+                    element.style.borderRadius = '4px';
+                    element.style.borderLeft = '3px solid #ffc107';
+                } else {
+                    element.innerHTML = `<strong>${formattedKey}:</strong> ${value}`;
+                }
+                
+                container.appendChild(element);
+                console.log(`✅ Added ${className} ${index + 1}: ${formattedKey} = ${value}`);
+            });
+            
+            console.log(`🎉 Successfully displayed ${Object.keys(items).length} ${className} items`);
+        } else {
+            const noData = document.createElement('p');
+            noData.className = 'no-data';
+            noData.textContent = container.id.includes('measurements') ? 'No measurements available' :
+                container.id.includes('locations') ? 'No locations specified' :
+                    'No data available';
+            container.appendChild(noData);
+            console.log(`⚠️ No ${className} items to display`);
+        }
+    }
+
+    forceDisplayUpdate(result) {
+        // AGGRESSIVE DOM UPDATE - Force correct data display
+        console.log('🔥 FORCE DISPLAY UPDATE - Ensuring correct elbow data shows');
+        
+        // Clear all containers first
+        if (this.pathologiesList) this.pathologiesList.innerHTML = '';
+        if (this.landmarksList) this.landmarksList.innerHTML = '';
+        if (this.measurementsList) this.measurementsList.innerHTML = '';
+        if (this.locationsList) this.locationsList.innerHTML = '';
+        
+        // Force update body part with elbow-specific styling
+        if (result.body_part === 'elbow') {
+            this.bodyPart.textContent = '🦴 ELBOW';
+            this.bodyPart.style.color = '#28a745';
+            this.bodyPart.style.fontWeight = 'bold';
+        } else {
+            this.bodyPart.textContent = result.body_part || 'Unknown';
+        }
+        
+        // Force update study description
+        this.studyDescription.textContent = result.study_description || 'Unknown';
+        
+        // Force update pathologies with verification
+        const pathologies = result.pathologies || [];
+        console.log('🔍 Force updating pathologies:', pathologies.length, 'items');
+        
+        if (pathologies.length > 0) {
+            // Add verification banner for elbow pathologies
+            if (result.body_part === 'elbow' && pathologies.length === 10) {
+                const banner = document.createElement('div');
+                banner.style.cssText = 'background: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; padding: 10px; margin-bottom: 10px; color: #155724;';
+                banner.innerHTML = '✅ <strong>ELBOW ANALYSIS ACTIVE</strong> - Showing 10 detailed elbow pathologies';
+                this.pathologiesList.appendChild(banner);
+            }
+            
+            pathologies.forEach((pathology, index) => {
+                const element = document.createElement('div');
+                element.className = 'pathology-item';
+                element.innerHTML = `<strong>${index + 1}.</strong> ${pathology}`;
+                element.style.cssText = 'margin-bottom: 8px; padding: 5px; border-left: 3px solid #007bff; background: #f8f9fa;';
+                this.pathologiesList.appendChild(element);
+            });
+        }
+        
+        // Force update landmarks
+        const landmarks = result.anatomical_landmarks || [];
+        console.log('🔍 Force updating landmarks:', landmarks.length, 'items');
+        landmarks.forEach((landmark, index) => {
+            const element = document.createElement('div');
+            element.className = 'landmark-item';
+            element.textContent = landmark;
+            element.style.cssText = 'margin-bottom: 4px; padding: 3px;';
+            this.landmarksList.appendChild(element);
+        });
+        
+        // Force update measurements and locations
+        this.updateKeyValueList(this.measurementsList, result.measurements || {}, 'measurement-item');
+        this.updateKeyValueList(this.locationsList, result.locations || {}, 'location-item');
+        
+        // Add patient isolation indicators
+        if (window.patientIsolation) {
+            window.patientIsolation.addIsolationIndicators(result);
+        }
+        
+        console.log('✅ FORCE DISPLAY UPDATE COMPLETE with patient isolation');
     }
 
     formatDate(dateString) {
@@ -715,22 +916,58 @@ document.head.appendChild(style);
 // AI Analysis Functions
 async function performAIAnalysis() {
     try {
-        // Show loading state
+        // Check if we have analysis results
+        if (!window.currentAnalysisResult) {
+            showNotification('No analysis results available. Please analyze DICOM files first.', 'error');
+            return;
+        }
+
+        // Show loading state for all AI analysis buttons
         const aiAnalyzeBtn = document.getElementById('aiAnalyzeBtn');
+        const aiAnalyzeBtnTop = document.getElementById('aiAnalyzeBtnTop');
+        const aiAnalyzeBtnBottom = document.getElementById('aiAnalyzeBtnBottom');
+        
         const originalText = aiAnalyzeBtn.innerHTML;
+        const originalTextTop = aiAnalyzeBtnTop.innerHTML;
+        const originalTextBottom = aiAnalyzeBtnBottom.innerHTML;
+        
         aiAnalyzeBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Analyzing...';
+        aiAnalyzeBtnTop.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Analyzing...';
+        aiAnalyzeBtnBottom.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Analyzing...';
+        
         aiAnalyzeBtn.disabled = true;
+        aiAnalyzeBtnTop.disabled = true;
+        aiAnalyzeBtnBottom.disabled = true;
 
         // Show AI analysis section if hidden
         const aiAnalysisSection = document.getElementById('aiAnalysisSection');
         aiAnalysisSection.style.display = 'block';
+
+        // Prepare the analysis data to send to Gemini
+        const analysisData = {
+            patient_name: window.currentAnalysisResult.patient_name || 'Unknown',
+            patient_id: window.currentAnalysisResult.patient_id || 'Unknown',
+            body_part: window.currentAnalysisResult.body_part || 'Unknown',
+            modality: window.currentAnalysisResult.modality || 'Unknown',
+            confidence: window.currentAnalysisResult.confidence || 0,
+            anatomical_landmarks: window.currentAnalysisResult.anatomical_landmarks || [],
+            pathologies: window.currentAnalysisResult.pathologies || [],
+            recommendations: window.currentAnalysisResult.recommendations || [],
+            measurements: window.currentAnalysisResult.measurements || {},
+            locations: window.currentAnalysisResult.locations || {}
+        };
+
+        console.log('Sending analysis data to Gemini:', analysisData);
 
         // Call the AI analysis endpoint
         const response = await fetch('/api/ai-analysis', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
-            }
+            },
+            body: JSON.stringify({
+                analysis_result: analysisData
+            })
         });
 
         const data = await response.json();
@@ -758,10 +995,18 @@ async function performAIAnalysis() {
         console.error('AI Analysis error:', error);
         showNotification(`AI analysis failed: ${error.message}`, 'error');
     } finally {
-        // Reset button state
+        // Reset button state for all AI analysis buttons
         const aiAnalyzeBtn = document.getElementById('aiAnalyzeBtn');
+        const aiAnalyzeBtnTop = document.getElementById('aiAnalyzeBtnTop');
+        const aiAnalyzeBtnBottom = document.getElementById('aiAnalyzeBtnBottom');
+        
         aiAnalyzeBtn.innerHTML = '<i class="fas fa-brain"></i> Get AI Analysis';
+        aiAnalyzeBtnTop.innerHTML = '<i class="fas fa-brain"></i> Get AI Analysis';
+        aiAnalyzeBtnBottom.innerHTML = '<i class="fas fa-brain"></i> Get AI-Powered Analysis';
+        
         aiAnalyzeBtn.disabled = false;
+        aiAnalyzeBtnTop.disabled = false;
+        aiAnalyzeBtnBottom.disabled = false;
     }
 }
 
@@ -890,49 +1135,71 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function displayAIAnalysisResults(aiAnalysis) {
-    // Display AI Summary
-    document.getElementById('aiSummary').textContent = aiAnalysis.summary || 'No summary available';
+    // Display Executive Summary
+    document.getElementById('aiSummary').textContent = aiAnalysis.executive_summary || 'No summary available';
 
-    // Display Clinical Insights
+    // Display Analysis Summary
     const clinicalInsights = document.getElementById('clinicalInsights');
-    if (aiAnalysis.clinical_insights && aiAnalysis.clinical_insights.length > 0) {
-        clinicalInsights.innerHTML = aiAnalysis.clinical_insights.map(insight =>
-            `<div class="insight-item">• ${insight}</div>`
-        ).join('');
+    if (aiAnalysis.analysis_summary) {
+        clinicalInsights.innerHTML = `<div class="analysis-text">${aiAnalysis.analysis_summary}</div>`;
     } else {
-        clinicalInsights.innerHTML = '<p class="no-data">No clinical insights available</p>';
+        clinicalInsights.innerHTML = '<p class="no-data">No analysis summary available</p>';
     }
 
-    // Display Differential Diagnosis
-    const differentialDiagnosis = document.getElementById('differentialDiagnosis');
-    if (aiAnalysis.differential_diagnosis && aiAnalysis.differential_diagnosis.length > 0) {
-        differentialDiagnosis.innerHTML = aiAnalysis.differential_diagnosis.map(diagnosis =>
-            `<div class="diagnosis-item">• ${diagnosis}</div>`
-        ).join('');
-    } else {
-        differentialDiagnosis.innerHTML = '<p class="no-data">No differential diagnosis available</p>';
-    }
-
-    // Display AI Recommendations
+    // Display Recommendations with enhanced structure
     const aiRecommendations = document.getElementById('aiRecommendations');
-    if (aiAnalysis.recommendations && aiAnalysis.recommendations.length > 0) {
-        aiRecommendations.innerHTML = aiAnalysis.recommendations.map(recommendation =>
-            `<div class="recommendation-item">• ${recommendation}</div>`
-        ).join('');
+    if (aiAnalysis.recommendations) {
+        let formattedRecommendations = aiAnalysis.recommendations;
+        
+        // Add emergency warnings if they exist
+        if (aiAnalysis.emergency_warnings) {
+            formattedRecommendations = `<div class="emergency-warnings" style="background: #fee; border-left: 4px solid #e53e3e; padding: 1rem; margin-bottom: 1rem; border-radius: 4px;">
+                <h4 style="color: #e53e3e; margin: 0 0 0.5rem 0;">🚨 Emergency Warning Signs</h4>
+                <div class="analysis-text">${aiAnalysis.emergency_warnings}</div>
+            </div>` + formattedRecommendations;
+        }
+        
+        aiRecommendations.innerHTML = formattedRecommendations;
     } else {
-        aiRecommendations.innerHTML = '<p class="no-data">No AI recommendations available</p>';
+        aiRecommendations.innerHTML = '<p class="no-data">No recommendations available</p>';
     }
 
-    // Display Risk Assessment
-    document.getElementById('riskLevel').textContent = aiAnalysis.risk_assessment || 'Not assessed';
-    document.getElementById('aiConfidence').textContent =
-        aiAnalysis.ai_confidence ? `${(aiAnalysis.ai_confidence * 100).toFixed(1)}%` : 'Not available';
+    // Display Risk Assessment with enhanced styling
+    const riskLevel = document.getElementById('riskLevel');
+    const riskText = aiAnalysis.risk_assessment || 'Not assessed';
+    const riskClass = getRiskClass(riskText);
+    riskLevel.textContent = riskText;
+    riskLevel.className = `risk-badge ${riskClass}`;
+
+    // Display Confidence Level
+    document.getElementById('aiConfidence').textContent = aiAnalysis.confidence_level || 'Not available';
 
     // Display Follow-up Plan
     document.getElementById('followUpPlan').textContent = aiAnalysis.follow_up_plan || 'No follow-up plan available';
 
+    // Display Patient Summary
+    const patientUnderstanding = document.getElementById('patientUnderstanding');
+    if (aiAnalysis.patient_summary) {
+        patientUnderstanding.innerHTML = `<div class="analysis-text patient-friendly">${aiAnalysis.patient_summary}</div>`;
+    } else {
+        patientUnderstanding.innerHTML = '<p class="no-data">No patient summary available</p>';
+    }
+
     // Show the AI results grid
     document.getElementById('aiResultsGrid').style.display = 'grid';
+    
+    // Scroll to AI results
+    document.getElementById('aiResultsGrid').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+// Helper function to get risk class for styling
+function getRiskClass(riskLevel) {
+    const level = riskLevel.toLowerCase();
+    if (level.includes('critical')) return 'critical';
+    if (level.includes('high')) return 'high';
+    if (level.includes('medium')) return 'medium';
+    if (level.includes('low')) return 'low';
+    return 'medium';
 }
 
 // Update the displayResults function to show AI analysis section
@@ -950,31 +1217,20 @@ function displayResults(result) {
 // All history-related functions removed
 
 // Professional Report Download Function
-async function downloadProfessionalReport() {
+async function downloadProfessionalReport(reportId = 'generate-on-demand') {
     try {
-        const button = document.getElementById('downloadProfessionalReportBtn');
-        const reportId = button.getAttribute('data-report-id');
-
-        if (!reportId) {
-            showNotification('No report ID found', 'error');
-        return;
-    }
-
-        // Show loading state
-        const originalText = button.innerHTML;
-        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Generating PDF...';
-        button.disabled = true;
-
+        showNotification('Generating professional report...', 'info');
+        
         let response;
 
         if (reportId === 'generate-on-demand') {
-            // Generate PDF from current analysis result
+            // Generate PDF directly from current analysis result
             if (!window.latestAnalysisResult) {
                 throw new Error('No analysis result available for PDF generation');
             }
 
-            // First, save the patient report to get a proper report ID
-            const saveResponse = await fetch('/api/save-patient-report', {
+            // Use the new direct PDF generation endpoint
+            response = await fetch('/api/generate-professional-report', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -983,20 +1239,8 @@ async function downloadProfessionalReport() {
                     analysis_result: window.latestAnalysisResult
                 })
             });
-
-            if (saveResponse.ok) {
-                const saveData = await saveResponse.json();
-                if (saveData.report_id) {
-                    // Now download using the saved report ID
-                    response = await fetch(`/api/professional-report/${saveData.report_id}`);
         } else {
-                    throw new Error('Failed to save patient report');
-                }
-            } else {
-                throw new Error('Failed to save patient report');
-            }
-        } else {
-            // Download using existing report ID
+            // Download using existing report ID (fallback)
             response = await fetch(`/api/professional-report/${reportId}`);
         }
 
@@ -1037,7 +1281,7 @@ async function downloadProfessionalReport() {
                     document.body.removeChild(a);
 
                     showNotification('Professional report downloaded successfully!', 'success');
-        } else {
+                } else {
                     throw new Error('No download URL or PDF content found in response');
                 }
             } else {
@@ -1069,12 +1313,7 @@ async function downloadProfessionalReport() {
 
     } catch (error) {
         console.error('Professional report download error:', error);
-        showNotification(`Download failed: ${error.message}`, 'error');
-    } finally {
-        // Reset button state
-        const button = document.getElementById('downloadProfessionalReportBtn');
-        button.innerHTML = '<i class="fas fa-file-pdf"></i> Download Professional Report';
-        button.disabled = false;
+        showNotification(`Professional report download error: ${error.message}`, 'error');
     }
 }
 

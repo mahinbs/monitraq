@@ -1559,3 +1559,334 @@ body {
         width: 100%;
     }
 }
+
+/* AI Analysis Text Styling */
+.analysis-text {
+    line-height: 1.8;
+    color: #2d3748;
+    font-size: 0.95rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.analysis-text p {
+    margin-bottom: 1rem;
+}
+
+.analysis-text strong {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.analysis-text em {
+    color: #4a5568;
+    font-style: italic;
+}
+
+.analysis-text ul, .analysis-text ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.analysis-text li {
+    margin-bottom: 0.5rem;
+}
+
+.analysis-text h4 {
+    color: #2d3748;
+    font-weight: 600;
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.analysis-text h4:first-child {
+    margin-top: 0;
+}
+
+/* AI Analysis Button Styling */
+.ai-analyze-btn-top {
+    display: none; /* Initially hidden */
+    transition: all 0.3s ease;
+}
+
+.ai-analyze-btn-top:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.bottom-ai-analysis {
+    display: none; /* Initially hidden */
+    transition: all 0.3s ease;
+}
+
+.bottom-ai-analysis:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+}
+
+.ai-analyze-btn-bottom {
+    transition: all 0.3s ease;
+}
+
+.ai-analyze-btn-bottom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Enhanced Risk Badge Styling */
+.risk-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.risk-badge.critical {
+    background: linear-gradient(135deg, #e53e3e, #c53030);
+    color: white;
+    box-shadow: 0 2px 8px rgba(229, 62, 62, 0.3);
+}
+
+.risk-badge.high {
+    background: linear-gradient(135deg, #ed8936, #dd6b20);
+    color: white;
+    box-shadow: 0 2px 8px rgba(237, 137, 54, 0.3);
+}
+
+.risk-badge.medium {
+    background: linear-gradient(135deg, #ecc94b, #d69e2e);
+    color: #2d3748;
+    box-shadow: 0 2px 8px rgba(236, 201, 75, 0.3);
+}
+
+.risk-badge.low {
+    background: linear-gradient(135deg, #48bb78, #38a169);
+    color: white;
+    box-shadow: 0 2px 8px rgba(72, 187, 120, 0.3);
+}
+
+/* Emergency Warning Styling */
+.emergency-warnings {
+    background: linear-gradient(135deg, #fed7d7, #feb2b2);
+    border-left: 4px solid #e53e3e;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(229, 62, 62, 0.15);
+    animation: pulse-warning 2s infinite;
+}
+
+.emergency-warnings h4 {
+    color: #c53030;
+    margin: 0 0 1rem 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@keyframes pulse-warning {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(229, 62, 62, 0.15);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(229, 62, 62, 0.25);
+    }
+}
+
+/* Enhanced Analysis Section Headers */
+.analysis-text h4 {
+    color: #2d3748;
+    font-weight: 700;
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.analysis-text h4:first-child {
+    margin-top: 0;
+}
+
+/* Enhanced AI Analysis Cards */
+.ai-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.ai-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #667eea;
+}
+
+.ai-card .card-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+.ai-card .card-header h3 {
+    color: white;
+    font-weight: 600;
+}
+
+/* Loading Animation for AI Analysis */
+.ai-analyzing {
+    position: relative;
+    overflow: hidden;
+}
+
+.ai-analyzing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: loading-shimmer 1.5s infinite;
+}
+
+@keyframes loading-shimmer {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* Patient Understanding Section Styling */
+.patient-understanding-card {
+    grid-column: 1 / -1; /* Span full width */
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    border: 2px solid #667eea;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.15);
+}
+
+.patient-understanding-card .card-header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border-radius: 8px 8px 0 0;
+}
+
+.patient-understanding-card .card-header h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.patient-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.patient-section:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.patient-section:last-child {
+    margin-bottom: 0;
+}
+
+.patient-section h4 {
+    color: #667eea;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.patient-section h4 i {
+    font-size: 1.2rem;
+}
+
+.analysis-text.patient-friendly {
+    line-height: 1.8;
+    color: #2d3748;
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+.analysis-text.patient-friendly p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.analysis-text.patient-friendly strong {
+    color: #2d3748;
+    font-weight: 600;
+}
+
+.analysis-text.patient-friendly em {
+    color: #4a5568;
+    font-style: italic;
+}
+
+.analysis-text.patient-friendly ul, .analysis-text.patient-friendly ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.analysis-text.patient-friendly li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* Special styling for patient-friendly content */
+.patient-friendly {
+    background: linear-gradient(135deg, #f7fafc, #edf2f7);
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 3px solid #48bb78;
+}
+
+.patient-friendly h4 {
+    color: #2d3748;
+    font-weight: 600;
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1rem;
+}
+
+.patient-friendly h4:first-child {
+    margin-top: 0;
+}
+
+/* Responsive design for patient understanding */
+@media (max-width: 768px) {
+    .patient-understanding-card {
+        margin: 1rem 0;
+    }
+    
+    .patient-section {
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .patient-section h4 {
+        font-size: 1rem;
+    }
+    
+    .analysis-text.patient-friendly {
+        font-size: 0.95rem;
+    }
+}

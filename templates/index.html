@@ -8,6 +8,40 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- CACHE BUSTING FOR UPDOMEN PATHOLOGIES -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script>
+        // Force clear cache and debug pathologies
+        console.log("🔍 Pathology display debugging enabled");
+        
+        // Override fetch to log responses
+        const originalFetch = window.fetch;
+        window.fetch = function(...args) {
+            return originalFetch.apply(this, args).then(response => {
+                if (args[0].includes('/api/upload')) {
+                    response.clone().json().then(data => {
+                        console.log("📋 API Response:", data);
+                        console.log("🎯 Pathologies:", data.result?.pathologies);
+                        console.log("📊 Pathology count:", data.result?.pathologies?.length);
+                    });
+                }
+                return response;
+            });
+        };
+        
+        // Add timestamp to prevent caching - ELBOW FIX
+        window.cacheTimestamp = Date.now();
+        
+        // Force reload if showing wrong results
+        if (localStorage.getItem('lastAnalysisType') && 
+            window.location.search.indexOf('refresh') === -1) {
+            localStorage.removeItem('lastAnalysisType');
+            window.location.href = window.location.href + '?refresh=' + Date.now();
+        }
+    </script>
 </head>
 
 <body>
@@ -89,6 +123,9 @@
                     <div class="results-header">
                         <h2>Analysis Results</h2>
                         <div class="header-buttons">
+                            <button class="ai-analyze-btn-top" id="aiAnalyzeBtnTop" onclick="performAIAnalysis()" style="background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 500; cursor: pointer; margin-right: 10px;">
+                                <i class="fas fa-brain"></i> Get AI Analysis
+                            </button>
                             <button class="download-professional-report-btn" id="downloadProfessionalReportBtn"
                                 onclick="downloadProfessionalReport()"
                                 style="display: none; background: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 500; cursor: pointer; margin-right: 10px;">
@@ -239,6 +276,32 @@
                             </div>
                         </div>
 
+                        <!-- Measurements -->
+                        <div class="result-card">
+                            <div class="card-header">
+                                <i class="fas fa-ruler"></i>
+                                <h3>Clinical Measurements</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="measurements-list" id="measurementsList">
+                                    <p class="no-data">No measurements available</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Anatomical Locations -->
+                        <div class="result-card">
+                            <div class="card-header">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h3>Anatomical Locations</h3>
+                            </div>
+                            <div class="card-content">
+                                <div class="locations-list" id="locationsList">
+                                    <p class="no-data">No locations specified</p>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Recommendations -->
                         <div class="result-card">
                             <div class="card-header">
@@ -253,6 +316,19 @@
                         </div>
                     </div>
 
+                    <!-- Bottom AI Analysis Button -->
+                    <div class="bottom-ai-analysis" style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 2px dashed #667eea;">
+                        <h3 style="color: #667eea; margin-bottom: 1rem; font-size: 1.2rem;">
+                            <i class="fas fa-robot"></i> Need a Clear, Human-Readable Analysis?
+                        </h3>
+                        <p style="color: #718096; margin-bottom: 1.5rem; font-size: 0.95rem;">
+                            Get a comprehensive AI-powered interpretation of your DICOM analysis results with clear explanations and actionable recommendations.
+                        </p>
+                        <button class="ai-analyze-btn-bottom" id="aiAnalyzeBtnBottom" onclick="performAIAnalysis()" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 15px 30px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
+                            <i class="fas fa-brain"></i> Get AI-Powered Analysis
+                        </button>
+                    </div>
+
                     <!-- AI Analysis Section -->
                     <div class="ai-analysis-section" id="aiAnalysisSection" style="display: none;">
                         <div class="ai-analysis-header">
@@ -264,10 +340,6 @@
                                 <button class="download-report-btn" id="downloadReportBtn" onclick="downloadAIReport()"
                                     style="display: inline-flex;">
                                     <i class="fas fa-download"></i> Download PDF Report
-                                </button>
-                                <button class="test-popup-btn" onclick="testPopup()"
-                                    style="background: #ff6b6b; margin-left: 10px;">
-                                    <i class="fas fa-eye"></i> Test Popup
                                 </button>
                             </div>
                         </div>
@@ -299,52 +371,39 @@
                         </div>
 
                         <div class="ai-results-grid" id="aiResultsGrid" style="display: none;">
-                            <!-- AI Summary -->
+                            <!-- Executive Summary -->
                             <div class="result-card ai-card">
                                 <div class="card-header">
                                     <i class="fas fa-chart-line"></i>
-                                    <h3>AI Summary</h3>
+                                    <h3>Executive Summary</h3>
                                 </div>
                                 <div class="card-content">
                                     <p id="aiSummary">-</p>
                                 </div>
                             </div>
 
-                            <!-- Clinical Insights -->
+                            <!-- Analysis Summary -->
                             <div class="result-card ai-card">
                                 <div class="card-header">
                                     <i class="fas fa-stethoscope"></i>
-                                    <h3>Clinical Insights</h3>
+                                    <h3>Analysis Summary</h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="insights-list" id="clinicalInsights">
-                                        <p class="no-data">No insights available</p>
+                                        <p class="no-data">No analysis summary available</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Differential Diagnosis -->
-                            <div class="result-card ai-card">
-                                <div class="card-header">
-                                    <i class="fas fa-search"></i>
-                                    <h3>Differential Diagnosis</h3>
-                                </div>
-                                <div class="card-content">
-                                    <div class="diagnosis-list" id="differentialDiagnosis">
-                                        <p class="no-data">No differential diagnosis available</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- AI Recommendations -->
+                            <!-- Recommendations -->
                             <div class="result-card ai-card">
                                 <div class="card-header">
                                     <i class="fas fa-clipboard-list"></i>
-                                    <h3>AI Recommendations</h3>
+                                    <h3>Recommendations</h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="ai-recommendations-list" id="aiRecommendations">
-                                        <p class="no-data">No AI recommendations available</p>
+                                        <p class="no-data">No recommendations available</p>
                                     </div>
                                 </div>
                             </div>
@@ -377,6 +436,19 @@
                                 </div>
                                 <div class="card-content">
                                     <p id="followUpPlan">-</p>
+                                </div>
+                            </div>
+
+                            <!-- Patient Summary -->
+                            <div class="result-card ai-card patient-understanding-card">
+                                <div class="card-header">
+                                    <i class="fas fa-user-friends"></i>
+                                    <h3>Patient Summary</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div class="patient-understanding-content" id="patientUnderstanding">
+                                        <p class="no-data">No patient summary available</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -470,6 +542,9 @@
     </div>
 
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/cache_buster.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/cache_isolation.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/emergency_fix.js') }}"></script>
 </body>
 
 </html>
