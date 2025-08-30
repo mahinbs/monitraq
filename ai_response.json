@@ -1,0 +1,296 @@
+{
+  "ai_analysis": {
+    "ai_confidence": 0.85,
+    "analysis_timestamp": "2025-08-29T17:02:53.990054",
+    "clinical_insights": [
+      "1. **ANATOMICAL ASSESSMENT:**",
+      "The uterus was visualized in all 10 images, although image quality was compromised in many due to artifacts.  Anatomical landmarks such as the uterine fundus, body, and cervix were identifiable, although delineation was challenging in several scans due to motion artifact.  Assessment of the endometrium and myometrium was limited by image quality.  No clear evidence of adnexal masses or other pelvic abnormalities was discernible.",
+      "2. **PATHOLOGICAL ANALYSIS:**",
+      "3. **IMAGE QUALITY ASSESSMENT:**"
+    ],
+    "differential_diagnosis": [
+      "3. **CLINICAL CORRELATION:**",
+      "The clinical correlation depends entirely on the patient's symptoms and medical history, which are not provided in this report.  The findings suggest the need for further evaluation to determine the clinical significance of the uterine abnormality."
+    ],
+    "files_analyzed": 10,
+    "follow_up_plan": "Recommended timeline for follow-up imaging: Repeat MRI within 2-4 weeks with improved motion suppression techniques. Specific monitoring requirements: Close clinical monitoring of the patient's symptoms, including menstrual bleeding and pelvic pain. Patient education and counseling points: Explain the need for further investigation to determine the cause of the uterine abnormality. Long-term management considerations: Management will depend on the final diagnosis and may involve medical management, minimally invasive procedures, or surgery. *CLINICAL IMPRESSION:** The MR images reveal a potential diffuse uterine abnormality, the precise nature of which is obscured by significant motion artifact.  Repeat MRI with improved image acquisition is paramount to further delineate the lesion and formulate an appropriate management plan. Consultation with a gynecologist is recommended for comprehensive clinical evaluation and determination of subsequent diagnostic and therapeutic steps. *REPORT PREPARED BY:** Dr. AI Radiologist Medical AI Specialist Date: 2025-08-29 17:02",
+    "recommendations": [
+      "1. **IMMEDIATE ACTIONS:**  None.",
+      "2. **SPECIALIST CONSULTATIONS:** Consultation with a gynecologist is recommended for clinical correlation and further management.",
+      "3. **FURTHER DIAGNOSTIC WORKUP:**  Repeat MRI with improved motion suppression techniques is crucial.  Additional imaging modalities such as ultrasound or CT may be considered depending on clinical findings.  Endometrial biopsy should be considered to further investigate the nature of the uterine abnormality."
+    ],
+    "risk_assessment": "Overall risk level: Moderate Specific risk factors identified:  Unexplained uterine abnormality, potentially impacting fertility or causing bleeding. Urgency of clinical attention:  Moderate. Follow-up is needed within 2-4 weeks. Prognostic implications:  Prognosis depends on the underlying etiology of the uterine abnormality.",
+    "summary": "Analysis of 10 MR DICOM files reveals a predominantly homogeneous abnormality within the uterine structure, detected with an average confidence of 0.90.  Significant motion artifact was present in nine of the ten images, impacting image quality and potentially obscuring subtle findings.  Further investigation is warranted to fully characterize the uterine abnormality and ascertain its clinical significance."
+  },
+  "individual_results": [
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165952_1.2.840.113619.2.514.13667961.48262.4029.1756097579.233.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165952_1.2.840.113619.2.514.13667961.48262.4029.1756097579.232.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165952_1.2.840.113619.2.514.13667961.48262.4029.1756097579.231.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact",
+        "homogeneous abnormality"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165951_1.2.840.113619.2.514.13667961.48262.4029.1756097579.230.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact",
+        "homogeneous abnormality"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165951_1.2.840.113619.2.514.13667961.48262.4029.1756097579.229.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact",
+        "homogeneous abnormality"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165951_1.2.840.113619.2.514.13667961.48262.4029.1756097579.228.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact",
+        "homogeneous abnormality"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165951_1.2.840.113619.2.514.13667961.48262.4029.1756097579.227.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "homogeneous abnormality",
+        "blur"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165951_1.2.840.113619.2.514.13667961.48262.4029.1756097579.226.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact",
+        "homogeneous abnormality"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165951_1.2.840.113619.2.514.13667961.48262.4029.1756097579.225.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact",
+        "homogeneous abnormality"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    },
+    {
+      "anatomical_landmarks": [],
+      "body_part": "uterus",
+      "confidence": 0.9,
+      "filename": "20250829_165951_1.2.840.113619.2.514.13667961.48262.4029.1756097579.224.dcm",
+      "modality": "MR",
+      "pathologies": [
+        "motion artifact",
+        "homogeneous abnormality"
+      ],
+      "patient_info": {
+        "patient_id": "H4841",
+        "patient_name": "JAKIDUL HOQUE DR.I DAS",
+        "study_date": "20250825"
+      },
+      "recommendations": [
+        "Image quality compromised - consider repeat imaging",
+        "Patient motion detected - immobilization recommended",
+        "Review by radiologist with MRI expertise",
+        "Clinical correlation with patient history required",
+        "Consider additional imaging modalities if clinically indicated",
+        "Follow-up imaging recommended in 3-6 months",
+        "Review by radiologist recommended",
+        "Ensure proper documentation of findings"
+      ],
+      "study_description": "FISTULOGRAPHY"
+    }
+  ],
+  "success": true
+}

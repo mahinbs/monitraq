@@ -1,0 +1,19 @@
+openai
+pydicom
+pillow
+numpy
+flask
+flask-cors
+python-dotenv
+requests
+matplotlib
+opencv-python
+scikit-image
+pandas
+torch
+torchvision
+# transformers - removed to reduce dependencies
+# sentence-transformers - removed to reduce dependencies  
+google-generativeai
+reportlab
+supabase
