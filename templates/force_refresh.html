@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Force Refresh DICOM Analyzer</title>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+</head>
+<body>
+    <h1>🔄 Force Refresh DICOM Analyzer</h1>
+    <p>Click the button below to clear cache and refresh:</p>
+    
+    <button onclick="forceRefresh()" style="padding: 10px 20px; font-size: 16px; background: #007bff; color: white; border: none; border-radius: 5px;">
+        🚀 Force Refresh & Clear Cache
+    </button>
+    
+    <script>
+        function forceRefresh() {
+            // Clear all caches
+            if ('caches' in window) {
+                caches.keys().then(function(names) {
+                    names.forEach(function(name) {
+                        caches.delete(name);
+                    });
+                });
+            }
+            
+            // Clear localStorage and sessionStorage
+            localStorage.clear();
+            sessionStorage.clear();
+            
+            // Force reload without cache
+            window.location.href = window.location.href + '?nocache=' + Date.now();
+        }
+        
+        // Auto refresh after 2 seconds
+        setTimeout(() => {
+            window.location.href = '/?nocache=' + Date.now();
+        }, 2000);
+    </script>
+</body>
+</html>

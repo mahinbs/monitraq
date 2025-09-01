@@ -6,86 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DICOM Analyzer - AI-Powered Medical Image Analysis</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <!-- CACHE BUSTING FOR UPDOMEN PATHOLOGIES -->
+    <!-- CACHE BUSTING -->
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <script>
-        // Force clear cache and debug pathologies
-        console.log("🔍 Pathology display debugging enabled");
-        
-        // Override fetch to log responses
-        const originalFetch = window.fetch;
-        window.fetch = function(...args) {
-            return originalFetch.apply(this, args).then(response => {
-                if (args[0].includes('/api/upload')) {
-                    response.clone().json().then(data => {
-                        console.log("📋 API Response:", data);
-                        console.log("🎯 Pathologies:", data.result?.pathologies);
-                        console.log("📊 Pathology count:", data.result?.pathologies?.length);
-                    });
-                }
-                return response;
-            });
-        };
-        
-        // Add timestamp to prevent caching - ELBOW FIX
+        console.log("🔍 DICOM Analyzer initialized");
         window.cacheTimestamp = Date.now();
-        
-        // Force reload if showing wrong results
-        if (localStorage.getItem('lastAnalysisType') && 
-            window.location.search.indexOf('refresh') === -1) {
-            localStorage.removeItem('lastAnalysisType');
-            window.location.href = window.location.href + '?refresh=' + Date.now();
-        }
     </script>
 </head>
 
 <body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
+    <div class="app-container">
+        <!-- Modern Header -->
+        <header class="modern-header">
             <div class="header-content">
-                <div class="logo">
-                    <i class="fas fa-brain"></i>
-                    <h1>DICOM Analyzer</h1>
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>DICOM Analyzer</h1>
+                        <p>AI-Powered Medical Image Analysis</p>
+                    </div>
                 </div>
-                <p class="subtitle">AI-Powered Medical Image Analysis with OpenAI</p>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-bolt"></i>
+                        <span>Fast</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-robot"></i>
+                        <span>AI-Powered</span>
+                    </div>
+                </div>
             </div>
         </header>
 
         <!-- Main Content -->
         <main class="main-content">
             <!-- Upload Section -->
-            <section class="upload-section">
+            <section class="upload-section" id="uploadSection">
                 <div class="upload-container">
-                    <div class="upload-area" id="uploadArea">
-                        <div class="upload-icon">
-                            <i class="fas fa-cloud-upload-alt"></i>
+                    <div class="upload-card">
+                        <div class="upload-area" id="uploadArea">
+                            <div class="upload-icon">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h3>Upload DICOM Files</h3>
+                            <p>Drag and drop your DICOM files here or click to browse</p>
+                            <div class="upload-features">
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Multiple file support</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Instant AI analysis</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check"></i>
+                                    <span>Professional reports</span>
+                                </div>
+                            </div>
+                            <input type="file" id="fileInput" accept=".dcm,.dicom" multiple style="display: none;">
+                            <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                                <i class="fas fa-plus"></i>
+                                Choose Files
+                            </button>
                         </div>
-                        <h3>Upload DICOM Files</h3>
-                        <p>Drag and drop your DICOM files here or click to browse</p>
-                        <p class="file-info">Select multiple files for complete study analysis (recommended for MRI/CT)
-                        </p>
-                        <p class="file-types">Supported formats: .dcm, .dicom</p>
-                        <input type="file" id="fileInput" accept=".dcm,.dicom" multiple style="display: none;">
-                        <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
-                            Choose Files
-                        </button>
 
                         <!-- File Selection Display -->
                         <div class="file-selection" id="fileSelection" style="display: none;">
-                            <h4>Selected Files:</h4>
+                            <div class="selection-header">
+                                <h4>Selected Files</h4>
+                                <span class="file-count" id="fileCount">0 files</span>
+                            </div>
                             <div class="file-list" id="fileList"></div>
                             <div class="file-actions">
                                 <button class="analyze-btn" id="analyzeBtn" onclick="analyzeSelectedFiles()">
-                                    <i class="fas fa-play"></i> Analyze All Files
+                                    <i class="fas fa-play"></i>
+                                    Analyze Files
                                 </button>
                                 <button class="clear-btn" onclick="clearFileSelection()">
-                                    <i class="fas fa-times"></i> Clear Selection
+                                    <i class="fas fa-times"></i>
+                                    Clear
                                 </button>
                             </div>
                         </div>
@@ -96,23 +108,28 @@
             <!-- Loading Section -->
             <section class="loading-section" id="loadingSection" style="display: none;">
                 <div class="loading-container">
-                    <div class="loading-spinner">
-                        <i class="fas fa-spinner fa-spin"></i>
-                    </div>
-                    <h3>Analyzing DICOM Files...</h3>
-                    <p>This may take a few moments while our AI analyzes your medical images</p>
-                    <div class="analysis-progress">
-                        <div class="progress-item">
-                            <span class="progress-label">Processing files:</span>
-                            <span class="progress-value" id="filesProcessed">0</span> / <span id="totalFiles">0</span>
+                    <div class="loading-animation">
+                        <div class="loading-spinner">
+                            <i class="fas fa-brain"></i>
                         </div>
-                        <div class="progress-item">
-                            <span class="progress-label">Current file:</span>
-                            <span class="progress-value" id="currentFile">-</span>
+                        <div class="loading-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
                         </div>
                     </div>
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progressFill"></div>
+                    <h3>AI Analysis in Progress</h3>
+                    <p>Our advanced AI is analyzing your medical images</p>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <div class="progress-stats">
+                            <span id="filesProcessed">0</span> / <span id="totalFiles">0</span> files processed
+                        </div>
+                    </div>
+                    <div class="current-file">
+                        <span id="currentFile">Initializing...</span>
                     </div>
                 </div>
             </section>
@@ -120,41 +137,49 @@
             <!-- Results Section -->
             <section class="results-section" id="resultsSection" style="display: none;">
                 <div class="results-container">
+                    <!-- Results Header -->
                     <div class="results-header">
-                        <h2>Analysis Results</h2>
-                        <div class="header-buttons">
-                            <button class="ai-analyze-btn-top" id="aiAnalyzeBtnTop" onclick="performAIAnalysis()" style="background: #667eea; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 500; cursor: pointer; margin-right: 10px;">
-                                <i class="fas fa-brain"></i> Get AI Analysis
-                            </button>
-                            <button class="download-professional-report-btn" id="downloadProfessionalReportBtn"
-                                onclick="downloadProfessionalReport()"
-                                style="display: none; background: #e74c3c; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: 500; cursor: pointer; margin-right: 10px;">
-                                <i class="fas fa-file-pdf"></i> Download Professional Report
+                        <div class="header-left">
+                            <h2>Analysis Results</h2>
+                            <p>Comprehensive AI-powered medical image analysis</p>
+                        </div>
+                        <div class="header-actions">
+                            <button class="ai-analysis-btn" id="aiAnalysisBtn" onclick="performAIAnalysis()">
+                                <i class="fas fa-robot"></i>
+                                Get AI Analysis
                             </button>
                             <button class="new-analysis-btn" onclick="resetAnalysis()">
-                                <i class="fas fa-plus"></i> New Analysis
+                                <i class="fas fa-plus"></i>
+                                New Analysis
+                            </button>
+                            <button class="download-report-btn" id="downloadProfessionalReportBtn" style="display: none;" onclick="downloadProfessionalReport()">
+                                <i class="fas fa-download"></i>
+                                Download Report
                             </button>
                         </div>
                     </div>
 
+                    <!-- Results Grid -->
                     <div class="results-grid">
                         <!-- Body Part Analysis -->
                         <div class="result-card primary">
                             <div class="card-header">
-                                <i class="fas fa-user-md"></i>
+                                <div class="card-icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
                                 <h3>Body Part Analysis</h3>
                             </div>
                             <div class="card-content">
-                                <div class="body-part-info">
-                                    <div class="body-part">
-                                        <span class="label">Identified Body Part:</span>
+                                <div class="analysis-info">
+                                    <div class="info-row">
+                                        <span class="label">Body Part:</span>
                                         <span class="value" id="bodyPart">-</span>
                                     </div>
-                                    <div class="confidence">
+                                    <div class="info-row">
                                         <span class="label">Confidence:</span>
                                         <span class="value" id="confidence">-</span>
                                     </div>
-                                    <div class="file-count" id="fileCount" style="display: none;">
+                                    <div class="info-row" id="fileCountRow" style="display: none;">
                                         <span class="label">Files Analyzed:</span>
                                         <span class="value" id="fileCountValue">-</span>
                                     </div>
@@ -165,7 +190,9 @@
                         <!-- Patient Information -->
                         <div class="result-card">
                             <div class="card-header">
-                                <i class="fas fa-user"></i>
+                                <div class="card-icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
                                 <h3>Patient Information</h3>
                             </div>
                             <div class="card-content">
@@ -178,10 +205,6 @@
                                         <span class="label">ID:</span>
                                         <span class="value" id="patientId">-</span>
                                     </div>
-                                    <!-- <div class="info-item">
-                                        <span class="label">Birth Date:</span>
-                                        <span class="value" id="patientBirthDate">-</span>
-                                    </div> -->
                                     <div class="info-item">
                                         <span class="label">Sex:</span>
                                         <span class="value" id="patientSex">-</span>
@@ -198,42 +221,12 @@
                             </div>
                         </div>
 
-                        <!-- Doctor Information -->
-                        <div class="result-card">
-                            <div class="card-header">
-                                <i class="fas fa-user-md"></i>
-                                <h3>Doctor & Institution</h3>
-                            </div>
-                            <div class="card-content">
-                                <div class="info-grid">
-                                    <div class="info-item">
-                                        <span class="label">Doctor Name:</span>
-                                        <span class="value" id="doctorName">-</span>
-                                    </div>
-                                    <!-- <div class="info-item">
-                                        <span class="label">Referring Physician:</span>
-                                        <span class="value" id="referringPhysician">-</span>
-                                    </div>
-                                    <div class="info-item">
-                                        <span class="label">Performing Physician:</span>
-                                        <span class="value" id="performingPhysician">-</span>
-                                    </div>
-                                    <div class="info-item">
-                                        <span class="label">Institution:</span>
-                                        <span class="value" id="institutionName">-</span>
-                                    </div>
-                                    <div class="info-item">
-                                        <span class="label">Department:</span>
-                                        <span class="value" id="departmentName">-</span>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-
                         <!-- Study Information -->
                         <div class="result-card">
                             <div class="card-header">
-                                <i class="fas fa-microscope"></i>
+                                <div class="card-icon">
+                                    <i class="fas fa-microscope"></i>
+                                </div>
                                 <h3>Study Information</h3>
                             </div>
                             <div class="card-content">
@@ -243,7 +236,7 @@
                                         <span class="value" id="modality">-</span>
                                     </div>
                                     <div class="info-item">
-                                        <span class="label">Study Description:</span>
+                                        <span class="label">Description:</span>
                                         <span class="value" id="studyDescription">-</span>
                                     </div>
                                 </div>
@@ -253,7 +246,9 @@
                         <!-- Anatomical Landmarks -->
                         <div class="result-card">
                             <div class="card-header">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="card-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
                                 <h3>Anatomical Landmarks</h3>
                             </div>
                             <div class="card-content">
@@ -266,7 +261,9 @@
                         <!-- Pathologies -->
                         <div class="result-card">
                             <div class="card-header">
-                                <i class="fas fa-exclamation-triangle"></i>
+                                <div class="card-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
                                 <h3>Pathologies & Findings</h3>
                             </div>
                             <div class="card-content">
@@ -279,8 +276,10 @@
                         <!-- Measurements -->
                         <div class="result-card">
                             <div class="card-header">
-                                <i class="fas fa-ruler"></i>
-                                <h3>Clinical Measurements</h3>
+                                <div class="card-icon">
+                                    <i class="fas fa-ruler"></i>
+                                </div>
+                                <h3>Measurements</h3>
                             </div>
                             <div class="card-content">
                                 <div class="measurements-list" id="measurementsList">
@@ -289,15 +288,17 @@
                             </div>
                         </div>
 
-                        <!-- Anatomical Locations -->
+                        <!-- Locations -->
                         <div class="result-card">
                             <div class="card-header">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <h3>Anatomical Locations</h3>
+                                <div class="card-icon">
+                                    <i class="fas fa-map-pin"></i>
+                                </div>
+                                <h3>Locations</h3>
                             </div>
                             <div class="card-content">
                                 <div class="locations-list" id="locationsList">
-                                    <p class="no-data">No locations specified</p>
+                                    <p class="no-data">No location data available</p>
                                 </div>
                             </div>
                         </div>
@@ -305,7 +306,9 @@
                         <!-- Recommendations -->
                         <div class="result-card">
                             <div class="card-header">
-                                <i class="fas fa-lightbulb"></i>
+                                <div class="card-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
                                 <h3>Recommendations</h3>
                             </div>
                             <div class="card-content">
@@ -316,90 +319,66 @@
                         </div>
                     </div>
 
-                    <!-- Bottom AI Analysis Button -->
-                    <div class="bottom-ai-analysis" style="text-align: center; margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.1); border-radius: 12px; border: 2px dashed #667eea;">
-                        <h3 style="color: #667eea; margin-bottom: 1rem; font-size: 1.2rem;">
-                            <i class="fas fa-robot"></i> Need a Clear, Human-Readable Analysis?
-                        </h3>
-                        <p style="color: #718096; margin-bottom: 1.5rem; font-size: 0.95rem;">
-                            Get a comprehensive AI-powered interpretation of your DICOM analysis results with clear explanations and actionable recommendations.
-                        </p>
-                        <button class="ai-analyze-btn-bottom" id="aiAnalyzeBtnBottom" onclick="performAIAnalysis()" style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 15px 30px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3); transition: all 0.3s ease;">
-                            <i class="fas fa-brain"></i> Get AI-Powered Analysis
-                        </button>
+                    <!-- AI Analysis Call-to-Action -->
+                    <div class="ai-cta-section">
+                        <div class="cta-content">
+                            <div class="cta-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <div class="cta-text">
+                                <h3>Get AI-Powered Analysis</h3>
+                                <p>Receive a comprehensive, human-readable analysis with clear explanations and actionable insights</p>
+                            </div>
+                            <button class="cta-btn" onclick="performAIAnalysis()">
+                                <i class="fas fa-brain"></i>
+                                Generate AI Analysis
+                            </button>
+                        </div>
                     </div>
 
-                    <!-- AI Analysis Section -->
-                    <div class="ai-analysis-section" id="aiAnalysisSection" style="display: none;">
-                        <div class="ai-analysis-header">
-                            <h2><i class="fas fa-robot"></i> AI-Powered Comprehensive Analysis</h2>
-                            <div class="ai-buttons">
-                                <button class="ai-analyze-btn" id="aiAnalyzeBtn" onclick="performAIAnalysis()">
-                                    <i class="fas fa-brain"></i> Get AI Analysis
-                                </button>
-                                <button class="download-report-btn" id="downloadReportBtn" onclick="downloadAIReport()"
-                                    style="display: inline-flex;">
-                                    <i class="fas fa-download"></i> Download PDF Report
-                                </button>
-                            </div>
+                    <!-- AI Analysis Results -->
+                    <div class="ai-analysis-results" id="aiAnalysisResults" style="display: none;">
+                        <div class="ai-results-header">
+                            <h2><i class="fas fa-robot"></i> AI Analysis Results</h2>
+                            <p>Comprehensive medical interpretation powered by advanced AI</p>
                         </div>
 
-                        <!-- AI Analysis Popup -->
-                        <div class="ai-popup-overlay" id="aiPopupOverlay" style="display: none;">
-                            <div class="ai-popup">
-                                <div class="ai-popup-header">
-                                    <h3><i class="fas fa-robot"></i> AI Analysis Complete</h3>
-                                    <button class="ai-popup-close" onclick="closeAIPopup()">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                                <div class="ai-popup-content">
-                                    <div class="ai-summary-section">
-                                        <h4><i class="fas fa-chart-line"></i> AI Summary</h4>
-                                        <p id="aiPopupSummary">Loading summary...</p>
-                                    </div>
-                                    <div class="ai-actions">
-                                        <button class="ai-popup-download-btn" onclick="downloadAIReportFromPopup()">
-                                            <i class="fas fa-download"></i> Download PDF Report
-                                        </button>
-                                        <button class="ai-popup-view-btn" onclick="viewFullAnalysis()">
-                                            <i class="fas fa-eye"></i> View Full Analysis
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="ai-results-grid" id="aiResultsGrid" style="display: none;">
-                            <!-- Executive Summary -->
-                            <div class="result-card ai-card">
+                        <div class="ai-results-grid">
+                            <!-- Clinical Summary -->
+                            <div class="ai-result-card primary">
                                 <div class="card-header">
-                                    <i class="fas fa-chart-line"></i>
-                                    <h3>Executive Summary</h3>
+                                    <div class="card-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h3>Clinical Summary</h3>
                                 </div>
                                 <div class="card-content">
                                     <p id="aiSummary">-</p>
                                 </div>
                             </div>
 
-                            <!-- Analysis Summary -->
-                            <div class="result-card ai-card">
+                            <!-- Analysis Insights -->
+                            <div class="ai-result-card">
                                 <div class="card-header">
-                                    <i class="fas fa-stethoscope"></i>
-                                    <h3>Analysis Summary</h3>
+                                    <div class="card-icon">
+                                        <i class="fas fa-stethoscope"></i>
+                                    </div>
+                                    <h3>Analysis Insights</h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="insights-list" id="clinicalInsights">
-                                        <p class="no-data">No analysis summary available</p>
+                                        <p class="no-data">No insights available</p>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Recommendations -->
-                            <div class="result-card ai-card">
+                            <!-- AI Recommendations -->
+                            <div class="ai-result-card">
                                 <div class="card-header">
-                                    <i class="fas fa-clipboard-list"></i>
-                                    <h3>Recommendations</h3>
+                                    <div class="card-icon">
+                                        <i class="fas fa-clipboard-list"></i>
+                                    </div>
+                                    <h3>AI Recommendations</h3>
                                 </div>
                                 <div class="card-content">
                                     <div class="ai-recommendations-list" id="aiRecommendations">
@@ -409,9 +388,11 @@
                             </div>
 
                             <!-- Risk Assessment -->
-                            <div class="result-card ai-card">
+                            <div class="ai-result-card">
                                 <div class="card-header">
-                                    <i class="fas fa-shield-alt"></i>
+                                    <div class="card-icon">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
                                     <h3>Risk Assessment</h3>
                                 </div>
                                 <div class="card-content">
@@ -429,34 +410,21 @@
                             </div>
 
                             <!-- Follow-up Plan -->
-                            <div class="result-card ai-card">
+                            <div class="ai-result-card">
                                 <div class="card-header">
-                                    <i class="fas fa-calendar-check"></i>
+                                    <div class="card-icon">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
                                     <h3>Follow-up Plan</h3>
                                 </div>
                                 <div class="card-content">
                                     <p id="followUpPlan">-</p>
                                 </div>
                             </div>
-
-                            <!-- Patient Summary -->
-                            <div class="result-card ai-card patient-understanding-card">
-                                <div class="card-header">
-                                    <i class="fas fa-user-friends"></i>
-                                    <h3>Patient Summary</h3>
-                                </div>
-                                <div class="card-content">
-                                    <div class="patient-understanding-content" id="patientUnderstanding">
-                                        <p class="no-data">No patient summary available</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </section>
-
-            <!-- History Section Removed -->
 
             <!-- Error Section -->
             <section class="error-section" id="errorSection" style="display: none;">
@@ -467,22 +435,49 @@
                     <h3>Analysis Failed</h3>
                     <p id="errorMessage">An error occurred during analysis</p>
                     <button class="retry-btn" onclick="resetAnalysis()">
-                        <i class="fas fa-redo"></i> Try Again
+                        <i class="fas fa-redo"></i>
+                        Try Again
                     </button>
                 </div>
             </section>
         </main>
 
-        <!-- Footer -->
-        <footer class="footer">
+        <!-- Modern Footer -->
+        <footer class="modern-footer">
             <div class="footer-content">
-                <p>&copy; 2024 DICOM Analyzer. Powered by OpenAI GPT-4 Vision.</p>
-                <div class="footer-links">
-                    <a href="#" onclick="showAbout()">About</a>
-                    <a href="#" onclick="showHelp()">Help</a>
+                <div class="footer-left">
+                    <p>&copy; 2024 DICOM Analyzer. Powered by OpenAI GPT-4 Vision & Google Gemini.</p>
+                </div>
+                <div class="footer-right">
+                    <a href="#" onclick="showAbout()" class="footer-link">About</a>
+                    <a href="#" onclick="showHelp()" class="footer-link">Help</a>
                 </div>
             </div>
         </footer>
+    </div>
+
+    <!-- AI Analysis Popup -->
+    <div class="ai-popup-overlay" id="aiPopupOverlay" style="display: none;">
+        <div class="ai-popup-content">
+            <div class="ai-popup-header">
+                <h3><i class="fas fa-robot"></i> AI Analysis Results</h3>
+                <button class="close-btn" onclick="closeAIPopup()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="ai-popup-body">
+                <div class="ai-summary">
+                    <h4>Clinical Summary</h4>
+                    <p id="aiPopupSummary">AI analysis completed successfully.</p>
+                </div>
+                <div class="ai-actions">
+                    <button class="download-ai-report-btn" onclick="downloadAIReport()">
+                        <i class="fas fa-download"></i>
+                        Download AI Report
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- About Modal -->
@@ -495,14 +490,13 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p>DICOM Analyzer is an advanced medical image analysis tool powered by OpenAI's GPT-4 Vision model. It
-                    provides accurate body part identification and comprehensive analysis of DICOM medical images.</p>
+                <p>DICOM Analyzer is an advanced medical image analysis tool powered by OpenAI's GPT-4 Vision and Google Gemini. It provides accurate body part identification and comprehensive analysis of DICOM medical images.</p>
                 <h4>Features:</h4>
                 <ul>
                     <li>Accurate body part identification</li>
                     <li>Anatomical landmark detection</li>
                     <li>Pathology and abnormality detection</li>
-                    <li>Clinical recommendations</li>
+                    <li>AI-powered clinical recommendations</li>
                     <li>Support for multiple imaging modalities</li>
                 </ul>
                 <h4>Supported Modalities:</h4>
@@ -526,7 +520,7 @@
                     <li>Upload a DICOM file (.dcm or .dicom format)</li>
                     <li>Wait for the AI analysis to complete</li>
                     <li>Review the comprehensive results</li>
-                    <li>Use the recommendations for clinical decision making</li>
+                    <li>Get AI-powered interpretation for clinical insights</li>
                 </ol>
                 <h4>File Requirements:</h4>
                 <ul>
@@ -535,8 +529,7 @@
                     <li>Must contain valid DICOM metadata</li>
                 </ul>
                 <h4>Privacy & Security:</h4>
-                <p>Your medical images are processed securely and are not stored permanently. All analysis is performed
-                    using OpenAI's secure API.</p>
+                <p>Your medical images are processed securely and are not stored permanently. All analysis is performed using secure AI APIs.</p>
             </div>
         </div>
     </div>

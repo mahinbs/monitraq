@@ -58,6 +58,7 @@ venv.bak/
 .env.production
 config.env
 *.env
+_env
 
 # IDE and Editor files
 .vscode/

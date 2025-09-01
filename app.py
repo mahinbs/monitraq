@@ -2584,14 +2584,21 @@ def generate_professional_report():
         pdf_path = generate_professional_pdf_report(analysis_result)
         
         if pdf_path and os.path.exists(pdf_path):
-            # Return the PDF file for download
-            return send_file(
-                pdf_path,
-                as_attachment=True,
-                download_name=os.path.basename(pdf_path),
-                mimetype='application/pdf'
-            )
+            try:
+                # Return the PDF file for download
+                logger.info(f"Successfully generated PDF report: {pdf_path}")
+                return send_file(
+                    path_or_file=pdf_path,
+                    as_attachment=True,
+                    download_name=os.path.basename(pdf_path),
+                    mimetype='application/pdf',
+                    environ=request.environ
+                )
+            except Exception as send_error:
+                logger.error(f"Error sending file: {send_error}")
+                return jsonify({'error': f'Failed to send file: {str(send_error)}'}), 500
         else:
+            logger.error(f"PDF report not generated or file not found: {pdf_path}")
             return jsonify({'error': 'Failed to generate PDF report'}), 500
 
     except Exception as e:
