@@ -27,6 +27,7 @@ from enhanced_pathology_detector import detect_enhanced_pathologies
 from database_manager import db_manager
 from pelvis_test_analyzer import PelvisTestAnalyzer
 from brain_test_analyzer import BrainTestAnalyzer
+from analyze_pelvis_33 import Pelvis33Analyzer
 import hashlib
 
 # Load environment variables
@@ -71,8 +72,8 @@ except Exception as e:
 
 # Initialize Gemini AI for enhanced report generation
 
-# Initialize Pelvis Test Analyzer
-pelvis_analyzer = PelvisTestAnalyzer()
+# Initialize Enhanced Pelvis Analyzer (Pelvis33Analyzer)
+pelvis_analyzer = Pelvis33Analyzer()
 
 # Initialize Brain Test Analyzer
 brain_analyzer = BrainTestAnalyzer()

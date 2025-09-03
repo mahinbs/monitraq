@@ -1,0 +1,3296 @@
+{
+  "analysis_date": "2025-09-03T23:09:36.788562",
+  "folder_path": "pelvis_33",
+  "total_files": 93,
+  "successful_analyses": 93,
+  "failed_analyses": 0,
+  "series_results": {
+    "uploaded_files": {
+      "series_name": "uploaded_files",
+      "file_count": 93,
+      "successful_count": 93,
+      "failed_count": 0,
+      "files": {
+        "20250903_152017_IM-0006-0005-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0005-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.595350477430557,
+            "std_intensity": 28.119896741422423,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0004-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0004-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.431722005208332,
+            "std_intensity": 28.52468707998846,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0011-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0011-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 61.104156494140625,
+            "std_intensity": 32.32026694777008,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0010-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0010-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 61.49278259277344,
+            "std_intensity": 31.86116729048322,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0004-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0004-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 39.12785339355469,
+            "std_intensity": 45.05860606246029,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_152017_IM-0006-0005-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0005-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 41.29473876953125,
+            "std_intensity": 45.31042977927206,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153826_IM-0006-0010-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0010-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 55.655598958333336,
+            "std_intensity": 30.168820910171462,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0011-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0011-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 52.423258463541664,
+            "std_intensity": 29.289206356616614,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0012-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0012-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.19184875488281,
+            "std_intensity": 44.10885556213785,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153825_IM-0006-0004-0002.dcm": {
+          "filename": "20250903_153825_IM-0006-0004-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.431722005208332,
+            "std_intensity": 28.52468707998846,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0005-0002.dcm": {
+          "filename": "20250903_153825_IM-0006-0005-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.595350477430557,
+            "std_intensity": 28.119896741422423,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0013-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0013-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.67817687988281,
+            "std_intensity": 46.669213231988756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154016_IM-0006-0002-0002.dcm": {
+          "filename": "20250903_154016_IM-0006-0002-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 29.04855685763889,
+            "std_intensity": 30.354791822531336,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0006-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0006-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 38.69303894042969,
+            "std_intensity": 25.509240922498794,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0007-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0007-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 37.081390380859375,
+            "std_intensity": 22.655828344577262,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0005-0001.dcm": {
+          "filename": "20250903_153825_IM-0006-0005-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 41.29473876953125,
+            "std_intensity": 45.31042977927206,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_152017_IM-0006-0013-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0013-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 55.59375,
+            "std_intensity": 54.07345345042756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0012-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0012-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 43.15247938368056,
+            "std_intensity": 41.26214767253039,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0004-0001.dcm": {
+          "filename": "20250903_153825_IM-0006-0004-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 39.12785339355469,
+            "std_intensity": 45.05860606246029,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154016_IM-0006-0003-0001.dcm": {
+          "filename": "20250903_154016_IM-0006-0003-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 37.38758850097656,
+            "std_intensity": 46.528507454987974,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154016_IM-0006-0002-0001.dcm": {
+          "filename": "20250903_154016_IM-0006-0002-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.282073974609375,
+            "std_intensity": 50.83554182788807,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153826_IM-0006-0007-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0007-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 63.42485894097222,
+            "std_intensity": 29.770877917246736,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0003-0002.dcm": {
+          "filename": "20250903_153825_IM-0006-0003-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.214029947916668,
+            "std_intensity": 27.494439593170576,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0002-0002.dcm": {
+          "filename": "20250903_153825_IM-0006-0002-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 29.04855685763889,
+            "std_intensity": 30.354791822531336,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0014-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0014-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 41.586578369140625,
+            "std_intensity": 48.048379796419745,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154017_IM-0006-0010-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0010-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 61.49278259277344,
+            "std_intensity": 31.86116729048322,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0011-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0011-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 61.104156494140625,
+            "std_intensity": 32.32026694777008,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0002-0001.dcm": {
+          "filename": "20250903_153825_IM-0006-0002-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.282073974609375,
+            "std_intensity": 50.83554182788807,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_152017_IM-0006-0014-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0014-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 59.62730577256944,
+            "std_intensity": 56.0889603906337,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0003-0001.dcm": {
+          "filename": "20250903_153825_IM-0006-0003-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 37.38758850097656,
+            "std_intensity": 46.528507454987974,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154017_IM-0006-0011-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0011-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 52.423258463541664,
+            "std_intensity": 29.289206356616614,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0010-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0010-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 55.655598958333336,
+            "std_intensity": 30.168820910171462,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0009-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0009-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 61.681966145833336,
+            "std_intensity": 30.539353458708604,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0008-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0008-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 56.93516710069444,
+            "std_intensity": 28.501931667189503,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0007-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0007-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 37.081390380859375,
+            "std_intensity": 22.655828344577262,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0006-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0006-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 38.69303894042969,
+            "std_intensity": 25.509240922498794,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0002-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0002-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 29.04855685763889,
+            "std_intensity": 30.354791822531336,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0003-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0003-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.214029947916668,
+            "std_intensity": 27.494439593170576,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0008-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0008-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 52.18247985839844,
+            "std_intensity": 29.49399071561399,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0009-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0009-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 60.815338134765625,
+            "std_intensity": 33.35554519651652,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0006-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0006-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 58.129855685763886,
+            "std_intensity": 28.825876145361995,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0007-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0007-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 63.42485894097222,
+            "std_intensity": 29.770877917246736,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0003-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0003-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 37.38758850097656,
+            "std_intensity": 46.528507454987974,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_152017_IM-0006-0002-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0002-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.282073974609375,
+            "std_intensity": 50.83554182788807,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_152017_IM-0006-0010-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0010-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 55.655598958333336,
+            "std_intensity": 30.168820910171462,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0006-0001.dcm": {
+          "filename": "20250903_153825_IM-0006-0006-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 58.129855685763886,
+            "std_intensity": 28.825876145361995,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0011-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0011-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 52.423258463541664,
+            "std_intensity": 29.289206356616614,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0015.dcm": {
+          "filename": "20250903_152017_IM-0006-0015.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 53.421468098958336,
+            "std_intensity": 50.69036328497499,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154016_IM-0006-0001-0001.dcm": {
+          "filename": "20250903_154016_IM-0006-0001-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 25.741195678710938,
+            "std_intensity": 35.69078258266861,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154017_IM-0006-0014-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0014-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 59.62730577256944,
+            "std_intensity": 56.0889603906337,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0011-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0011-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 61.104156494140625,
+            "std_intensity": 32.32026694777008,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0010-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0010-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 61.49278259277344,
+            "std_intensity": 31.86116729048322,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0016.dcm": {
+          "filename": "20250903_152017_IM-0006-0016.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 60.857340494791664,
+            "std_intensity": 58.66252647672016,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154016_IM-0006-0001-0002.dcm": {
+          "filename": "20250903_154016_IM-0006-0001-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 29.62350802951389,
+            "std_intensity": 30.279522649150127,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0014-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0014-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 41.586578369140625,
+            "std_intensity": 48.048379796419745,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_152017_IM-0006-0017.dcm": {
+          "filename": "20250903_152017_IM-0006-0017.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 53.77842881944444,
+            "std_intensity": 51.259871647987936,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0017.dcm": {
+          "filename": "20250903_154017_IM-0006-0017.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 53.77842881944444,
+            "std_intensity": 51.259871647987936,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0007-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0007-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 63.42485894097222,
+            "std_intensity": 29.770877917246736,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0006-0001.dcm": {
+          "filename": "20250903_152017_IM-0006-0006-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 58.129855685763886,
+            "std_intensity": 28.825876145361995,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0009-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0009-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 60.815338134765625,
+            "std_intensity": 33.35554519651652,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0008-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0008-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 52.18247985839844,
+            "std_intensity": 29.49399071561399,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0013-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0013-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 55.59375,
+            "std_intensity": 54.07345345042756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0012-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0012-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 43.15247938368056,
+            "std_intensity": 41.26214767253039,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0016.dcm": {
+          "filename": "20250903_154017_IM-0006-0016.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 60.857340494791664,
+            "std_intensity": 58.66252647672016,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0003-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0003-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.214029947916668,
+            "std_intensity": 27.494439593170576,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0006-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0006-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 38.69303894042969,
+            "std_intensity": 25.509240922498794,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0007-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0007-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 37.081390380859375,
+            "std_intensity": 22.655828344577262,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0008-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0008-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 56.93516710069444,
+            "std_intensity": 28.501931667189503,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0009-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0009-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 61.681966145833336,
+            "std_intensity": 30.539353458708604,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152007_IM-0006-0001-0001.dcm": {
+          "filename": "20250903_152007_IM-0006-0001-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 25.741195678710938,
+            "std_intensity": 35.69078258266861,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153826_IM-0006-0012-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0012-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.19184875488281,
+            "std_intensity": 44.10885556213785,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153826_IM-0006-0013-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0013-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.67817687988281,
+            "std_intensity": 46.669213231988756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154017_IM-0006-0015.dcm": {
+          "filename": "20250903_154017_IM-0006-0015.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 53.421468098958336,
+            "std_intensity": 50.69036328497499,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0005-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0005-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 41.29473876953125,
+            "std_intensity": 45.31042977927206,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154017_IM-0006-0004-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0004-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 39.12785339355469,
+            "std_intensity": 45.05860606246029,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153826_IM-0006-0014-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0014-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 59.62730577256944,
+            "std_intensity": 56.0889603906337,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0004-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0004-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.431722005208332,
+            "std_intensity": 28.52468707998846,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0005-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0005-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.595350477430557,
+            "std_intensity": 28.119896741422423,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_152017_IM-0006-0001-0002.dcm": {
+          "filename": "20250903_152017_IM-0006-0001-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 29.62350802951389,
+            "std_intensity": 30.279522649150127,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0014-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0014-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 41.586578369140625,
+            "std_intensity": 48.048379796419745,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153825_IM-0006-0001-0001.dcm": {
+          "filename": "20250903_153825_IM-0006-0001-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 25.741195678710938,
+            "std_intensity": 35.69078258266861,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154017_IM-0006-0012-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0012-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 43.15247938368056,
+            "std_intensity": 41.26214767253039,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0013-0001.dcm": {
+          "filename": "20250903_154017_IM-0006-0013-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 55.59375,
+            "std_intensity": 54.07345345042756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0008-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0008-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 52.18247985839844,
+            "std_intensity": 29.49399071561399,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0009-0002.dcm": {
+          "filename": "20250903_153826_IM-0006-0009-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 60.815338134765625,
+            "std_intensity": 33.35554519651652,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0015.dcm": {
+          "filename": "20250903_153826_IM-0006-0015.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 53.421468098958336,
+            "std_intensity": 50.69036328497499,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0017.dcm": {
+          "filename": "20250903_153826_IM-0006-0017.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 53.77842881944444,
+            "std_intensity": 51.259871647987936,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153825_IM-0006-0001-0002.dcm": {
+          "filename": "20250903_153825_IM-0006-0001-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 29.62350802951389,
+            "std_intensity": 30.279522649150127,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_154017_IM-0006-0013-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0013-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.67817687988281,
+            "std_intensity": 46.669213231988756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_154017_IM-0006-0012-0002.dcm": {
+          "filename": "20250903_154017_IM-0006-0012-0002.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [
+            "asymmetrical_findings",
+            "structural_abnormality"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.19184875488281,
+            "std_intensity": 44.10885556213785,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        "20250903_153826_IM-0006-0009-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0009-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 61.681966145833336,
+            "std_intensity": 30.539353458708604,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0008-0001.dcm": {
+          "filename": "20250903_153826_IM-0006-0008-0001.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 56.93516710069444,
+            "std_intensity": 28.501931667189503,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        "20250903_153826_IM-0006-0016.dcm": {
+          "filename": "20250903_153826_IM-0006-0016.dcm",
+          "series": "uploaded_files",
+          "modality": "MR",
+          "body_part": "pelvis",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "ilium",
+            "sacrum",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 60.857340494791664,
+            "std_intensity": 58.66252647672016,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        }
+      },
+      "confidence_score": 0.8516129032258053,
+      "anatomical_landmarks": [
+        "sacrum",
+        "pelvis",
+        "ilium"
+      ],
+      "pathologies": [
+        "asymmetrical_findings",
+        "structural_abnormality"
+      ],
+      "measurements": {
+        "image_width_pixels": 192.0,
+        "image_height_pixels": 192.0,
+        "image_area_pixels": 36864.0,
+        "mean_intensity": 60.857340494791664,
+        "std_intensity": 58.66252647672016,
+        "min_intensity": 0.0,
+        "max_intensity": 255.0
+      },
+      "metadata": {}
+    }
+  },
+  "overall_findings": {
+    "total_anatomical_landmarks": 3,
+    "total_pathologies": 2,
+    "key_pathologies_count": 0,
+    "most_common_landmarks": [
+      "sacrum",
+      "pelvis",
+      "ilium"
+    ],
+    "most_common_pathologies": [
+      "asymmetrical_findings",
+      "structural_abnormality"
+    ],
+    "series_with_findings": 1,
+    "overall_confidence": 0.8516129032258053
+  },
+  "pathology_summary": {
+    "other": [
+      "structural_abnormality"
+    ]
+  },
+  "recommendations": [
+    "Clinical correlation recommended",
+    "Follow-up as clinically indicated"
+  ]
+}
