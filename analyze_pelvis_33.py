@@ -187,6 +187,10 @@ class Pelvis33Analyzer:
                 'study_date': getattr(dcm, 'StudyDate', 'unknown'),
                 'patient_age': getattr(dcm, 'PatientAge', 'unknown'),
                 'patient_sex': getattr(dcm, 'PatientSex', 'unknown'),
+                'patient_name': str(getattr(dcm, 'PatientName', 'unknown')),
+                'patient_id': getattr(dcm, 'PatientID', 'unknown'),
+                'study_description': getattr(dcm, 'StudyDescription', 'unknown'),
+                'institution_name': getattr(dcm, 'InstitutionName', 'unknown'),
                 'anatomical_landmarks': [],
                 'pathologies': [],
                 'measurements': {},
@@ -461,6 +465,7 @@ class Pelvis33Analyzer:
             all_pathologies = []
             all_landmarks = []
             pathology_counts = {}  # Track frequency of each pathology
+            patient_info = {}  # Aggregate patient information
             
             for series_name, series_data in results['series_results'].items():
                 if series_data.get('pathologies'):
@@ -475,6 +480,28 @@ class Pelvis33Analyzer:
                     for landmark in series_data['anatomical_landmarks']:
                         if landmark not in all_landmarks:
                             all_landmarks.append(landmark)
+                
+                # Aggregate patient information from files
+                if series_data.get('files'):
+                    for filename, file_data in series_data['files'].items():
+                        if file_data.get('study_date') and file_data['study_date'] != 'unknown':
+                            patient_info['study_date'] = file_data['study_date']
+                        if file_data.get('patient_age') and file_data['patient_age'] != 'unknown':
+                            patient_info['patient_age'] = file_data['patient_age']
+                        if file_data.get('patient_sex') and file_data['patient_sex'] != 'unknown':
+                            patient_info['patient_sex'] = file_data['patient_sex']
+                        if file_data.get('patient_name') and file_data['patient_name'] != 'unknown':
+                            patient_info['patient_name'] = file_data['patient_name']
+                        if file_data.get('patient_id') and file_data['patient_id'] != 'unknown':
+                            patient_info['patient_id'] = file_data['patient_id']
+                        if file_data.get('study_description') and file_data['study_description'] != 'unknown':
+                            patient_info['study_description'] = file_data['study_description']
+                        if file_data.get('institution_name') and file_data['institution_name'] != 'unknown':
+                            patient_info['institution_name'] = file_data['institution_name']
+                        if file_data.get('modality') and file_data['modality'] != 'unknown':
+                            patient_info['modality'] = file_data['modality']
+                        if file_data.get('body_part') and file_data['body_part'] != 'pelvis':
+                            patient_info['body_part'] = file_data['body_part']
             
             # Sort pathologies by frequency (most common first)
             all_pathologies.sort(key=lambda x: pathology_counts.get(x, 0), reverse=True)
@@ -506,6 +533,10 @@ class Pelvis33Analyzer:
                 'overall_confidence': 0.85,
                 'pathology_frequency': pathology_counts  # Add frequency data
             }
+            
+            # Add patient information to results
+            if patient_info:
+                results['patient_info'] = patient_info
             
             # Generate recommendations
             results['recommendations'] = self._generate_recommendations(pathology_summary)

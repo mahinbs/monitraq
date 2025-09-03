@@ -179,6 +179,29 @@
             color: #1976d2;
         }
         
+        .patient-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .patient-info-item {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #007bff;
+        }
+        
+        .patient-info-item strong {
+            color: #495057;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
         .confidence-bar {
             background: #e9ecef;
             border-radius: 10px;
@@ -841,6 +864,43 @@
                     <small>Confidence: ${((summary.confidence || 0) * 100).toFixed(1)}%</small>
                 </div>
             `;
+            
+            // Patient Information
+            if (fullResults.patient_info && Object.keys(fullResults.patient_info).length > 0) {
+                html += '<div class="test-section"><h4>👤 Patient Information</h4>';
+                html += '<div class="patient-info-grid">';
+                
+                const patientInfo = fullResults.patient_info;
+                if (patientInfo.patient_name) {
+                    html += `<div class="patient-info-item"><strong>Name:</strong> ${patientInfo.patient_name}</div>`;
+                }
+                if (patientInfo.patient_id) {
+                    html += `<div class="patient-info-item"><strong>ID:</strong> ${patientInfo.patient_id}</div>`;
+                }
+                if (patientInfo.patient_age) {
+                    html += `<div class="patient-info-item"><strong>Age:</strong> ${patientInfo.patient_age}</div>`;
+                }
+                if (patientInfo.patient_sex) {
+                    html += `<div class="patient-info-item"><strong>Sex:</strong> ${patientInfo.patient_sex}</div>`;
+                }
+                if (patientInfo.study_date) {
+                    html += `<div class="patient-info-item"><strong>Study Date:</strong> ${patientInfo.study_date}</div>`;
+                }
+                if (patientInfo.modality) {
+                    html += `<div class="patient-info-item"><strong>Modality:</strong> ${patientInfo.modality}</div>`;
+                }
+                if (patientInfo.body_part) {
+                    html += `<div class="patient-info-item"><strong>Body Part:</strong> ${patientInfo.body_part}</div>`;
+                }
+                if (patientInfo.study_description) {
+                    html += `<div class="patient-info-item"><strong>Study:</strong> ${patientInfo.study_description}</div>`;
+                }
+                if (patientInfo.institution_name) {
+                    html += `<div class="patient-info-item"><strong>Institution:</strong> ${patientInfo.institution_name}</div>`;
+                }
+                
+                html += '</div></div>';
+            }
             
             // Key Pathology Summary
             if (fullResults.pathology_summary && Object.keys(fullResults.pathology_summary).length > 0) {
