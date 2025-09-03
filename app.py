@@ -3364,9 +3364,6 @@ def upload_pelvis_files():
             shutil.rmtree(temp_dir)
             raise analysis_error
         
-        # Clean up temp directory
-        shutil.rmtree(temp_dir)
-        
         # Create summary for display
         summary = {
             'total_files': results.get('total_files', 0),
@@ -3381,18 +3378,23 @@ def upload_pelvis_files():
         
         # Generate doctor-quality report
         try:
-            # Extract real patient information from DICOM files
+            # Extract real patient information from DICOM files BEFORE cleaning up
             import pydicom
             
             # Get the first DICOM file to extract patient info
             first_dicom_file = None
+            print(f"Attempting to extract patient data from {len(uploaded_files)} uploaded files")
             for filepath in uploaded_files:
                 try:
+                    print(f"Reading DICOM file: {filepath}")
                     ds = pydicom.dcmread(filepath)
+                    print(f"File has PatientName: {hasattr(ds, 'PatientName')}, PatientID: {hasattr(ds, 'PatientID')}")
                     if hasattr(ds, 'PatientName') and hasattr(ds, 'PatientID'):
                         first_dicom_file = ds
+                        print(f"Successfully found DICOM file with patient data: {getattr(ds, 'PatientName', 'Unknown')} - {getattr(ds, 'PatientID', 'Unknown')}")
                         break
-                except:
+                except Exception as e:
+                    print(f"Error reading DICOM file {filepath}: {e}")
                     continue
             
             # Prepare analysis data for report generation with real patient data
@@ -3408,6 +3410,9 @@ def upload_pelvis_files():
                 study_description = str(getattr(first_dicom_file, 'StudyDescription', 'Unknown Study'))
                 institution = str(getattr(first_dicom_file, 'InstitutionName', 'Unknown Institution'))
                 referring_physician = str(getattr(first_dicom_file, 'ReferringPhysicianName', 'Unknown Physician'))
+                
+                print(f"Extracted patient data: Name={patient_name}, ID={patient_id}, Age={patient_age}, Sex={patient_sex}")
+                print(f"Study data: Date={study_date}, Modality={modality}, Body Part={body_part}")
                 
                 # Format study date if available
                 if study_date != 'Unknown Date' and len(study_date) == 8:
@@ -3442,6 +3447,7 @@ def upload_pelvis_files():
                 
             else:
                 # Fallback to default values if no DICOM info available
+                print("No DICOM file with patient data found, using fallback values")
                 patient_name = 'Unknown Patient'
                 patient_id = 'Unknown ID'
                 patient_age = 'Unknown Age'
@@ -3478,6 +3484,9 @@ def upload_pelvis_files():
             doctor_report = enhanced_report_generator.generate_doctor_quality_report(analysis_data)
             formatted_report = enhanced_report_generator.format_report_for_display(doctor_report)
             
+            # Clean up temp directory AFTER extracting patient data and generating report
+            shutil.rmtree(temp_dir)
+            
             # Add the doctor-quality report to the response
             return jsonify({
                 'success': True,
@@ -3490,6 +3499,8 @@ def upload_pelvis_files():
             
         except Exception as report_error:
             logger.error(f"Error generating doctor-quality report: {report_error}")
+            # Clean up temp directory even if report generation fails
+            shutil.rmtree(temp_dir)
             # Return the basic results if report generation fails
             return jsonify({
                 'success': True,
