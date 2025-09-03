@@ -1,0 +1,73 @@
+{
+  "total_files": 491,
+  "sample_analysis": [
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.835.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "series_description": "Ax T1 PROPELLER FS+C",
+      "modality": "MR",
+      "body_part": "PELVIS",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "slice_thickness": "3.5",
+      "pixel_spacing": "[0.4297, 0.4297]"
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.821.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "series_description": "Ax T1 PROPELLER FS+C",
+      "modality": "MR",
+      "body_part": "PELVIS",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "slice_thickness": "3.5",
+      "pixel_spacing": "[0.4297, 0.4297]"
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949759.534.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "series_description": "3-Plane Localizer",
+      "modality": "MR",
+      "body_part": "PELVIS",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "slice_thickness": "10",
+      "pixel_spacing": "[0.8984, 0.8984]"
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.612.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "series_description": "Ax DWI",
+      "modality": "MR",
+      "body_part": "UTERUS",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "slice_thickness": "3.5",
+      "pixel_spacing": "[1.4844, 1.4844]"
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.606.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "series_description": "Ax DWI",
+      "modality": "MR",
+      "body_part": "UTERUS",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "slice_thickness": "3.5",
+      "pixel_spacing": "[1.4844, 1.4844]"
+    }
+  ],
+  "series_distribution": {
+    "Ax T1 PROPELLER FS+C": 2,
+    "3-Plane Localizer": 1,
+    "Ax DWI": 2
+  },
+  "modality_distribution": {
+    "MR": 5
+  },
+  "patient_info": {
+    "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+    "patient_id": "G2480F",
+    "body_part": "PELVIS"
+  }
+}

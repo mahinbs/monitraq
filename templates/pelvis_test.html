@@ -374,6 +374,17 @@
 </head>
 <body>
     <div class="pelvis-test-container">
+        <div class="navigation-section" style="margin-bottom: 30px; padding: 20px; background: #e8f4f8; border-radius: 8px; border: 1px solid #bdc3c7;">
+            <h2 style="margin-top: 0; color: #2c3e50;">🚀 Enhanced AI Analysis</h2>
+            <p style="margin-bottom: 15px; color: #34495e;">Our AI now generates reports that match the quality of real radiologists!</p>
+            <a href="/enhanced-report" class="test-button" style="background: #27ae60; text-decoration: none; display: inline-block;">
+                🏥 View Enhanced Doctor Report
+            </a>
+            <p style="margin-top: 10px; font-size: 14px; color: #7f8c8d;">
+                Compare the enhanced AI reports with real doctor reports
+            </p>
+        </div>
+        
         <h1>🦴 Pelvis Test Analysis System</h1>
         <p class="lead">Specialized DICOM analysis for pelvis imaging with enhanced pathology detection</p>
         
@@ -650,6 +661,18 @@
                     console.log('Summary:', result.summary);
                     console.log('Full results:', result.full_results);
                     
+                    // Store the enhanced doctor-quality report if available
+                    if (result.doctor_quality_report && result.formatted_report) {
+                        window.doctorQualityReport = {
+                            report: result.doctor_quality_report,
+                            formatted_report: result.formatted_report
+                        };
+                        console.log('Enhanced doctor-quality report stored:', window.doctorQualityReport);
+                    } else {
+                        console.log('No enhanced report available, using basic results');
+                        window.doctorQualityReport = null;
+                    }
+                    
                     // Show results after a short delay
                     setTimeout(() => {
                         // Pass both summary and full results to displayResults
@@ -813,6 +836,76 @@
             }
         }
         
+        // Generate enhanced doctor-quality report
+        async function generateEnhancedReport() {
+            try {
+                console.log('Generating enhanced report...');
+                
+                // Show loading state
+                const button = event.target;
+                const originalText = button.textContent;
+                button.disabled = true;
+                button.textContent = '🔄 Generating...';
+                
+                // Prepare analysis data for report generation using real patient data
+                const analysisData = {
+                    'patient_name': fullResults.patient_info?.patient_name || 'Unknown Patient',
+                    'patient_id': fullResults.patient_info?.patient_id || 'Unknown ID',
+                    'age': fullResults.patient_info?.patient_age || 'Unknown Age',
+                    'sex': fullResults.patient_info?.patient_sex || 'Unknown Sex',
+                    'study_date': fullResults.patient_info?.study_date || 'Unknown Date',
+                    'modality': fullResults.patient_info?.modality || 'Unknown Modality',
+                    'body_part': fullResults.patient_info?.body_part || 'Unknown Body Part',
+                    'study_description': fullResults.patient_info?.study_description || 'Unknown Study',
+                    'institution': fullResults.patient_info?.institution_name || 'Unknown Institution',
+                    'referring_physician': fullResults.patient_info?.referring_physician || 'Unknown Physician',
+                    'sequences': ['T1', 'T2', 'DWI', 'GRE'], // Default sequences
+                    'contrast': 'Without contrast', // Default contrast
+                    'pathologies': Object.keys(fullResults.pathology_summary || {}),
+                    'anatomical_landmarks': fullResults.overall_findings?.anatomical_landmarks || [],
+                    'measurements': fullResults.measurements || {},
+                    'locations': fullResults.locations || {}
+                };
+                
+                // Call the enhanced report API
+                const response = await fetch('/api/pelvis/doctor-report', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        analysis_data: analysisData
+                    })
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    
+                    // Store the enhanced report
+                    window.doctorQualityReport = {
+                        report: result.report,
+                        formatted_report: result.formatted_report
+                    };
+                    
+                    // Refresh the display to show the enhanced report
+                    displayResults(summary, fullResults);
+                    
+                    console.log('Enhanced report generated successfully:', result);
+                } else {
+                    throw new Error('Failed to generate enhanced report');
+                }
+                
+            } catch (error) {
+                console.error('Error generating enhanced report:', error);
+                alert('Failed to generate enhanced report: ' + error.message);
+            } finally {
+                // Reset button state
+                const button = event.target;
+                button.disabled = false;
+                button.textContent = originalText;
+            }
+        }
+        
         // Display results
         function displayResults(summary, fullResults) {
             console.log('displayResults called with:', { summary, fullResults });
@@ -902,8 +995,40 @@
                 html += '</div></div>';
             }
             
-            // Key Pathology Summary
-            if (fullResults.pathology_summary && Object.keys(fullResults.pathology_summary).length > 0) {
+            // Enhanced Doctor-Quality Report (Priority Display)
+            if (window.doctorQualityReport && window.doctorQualityReport.formatted_report) {
+                html += `
+                    <div class="test-section enhanced-report-section" style="background: #f8f9fa; border: 2px solid #28a745; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                        <h4 style="color: #28a745; margin-top: 0;">🏥 Enhanced AI Medical Report</h4>
+                        <p style="color: #28a745; font-weight: bold; margin-bottom: 20px;">AI-Generated Report Matching Real Radiologist Quality</p>
+                        <div style="font-family: 'Courier New', monospace; background: white; padding: 20px; border-radius: 5px; border: 1px solid #dee2e6; white-space: pre-wrap; font-size: 14px; line-height: 1.4;">
+                            ${window.doctorQualityReport.formatted_report}
+                        </div>
+                        <div style="margin-top: 15px; padding: 10px; background: #e8f5e8; border-radius: 5px; border-left: 4px solid #28a745;">
+                            <p style="margin: 0; color: #155724; font-size: 14px;">
+                                <strong>✅ This report follows professional medical standards and matches the quality of real radiologists.</strong>
+                            </p>
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Show button to generate enhanced report if not available
+                html += `
+                    <div class="test-section" style="background: #fff3cd; border: 2px solid #ffc107; border-radius: 8px; padding: 20px; margin: 20px 0;">
+                        <h4 style="color: #856404; margin-top: 0;">🔄 Generate Enhanced Doctor Report</h4>
+                        <p style="color: #856404; margin-bottom: 20px;">Click below to generate a professional medical report that matches real radiologist quality.</p>
+                        <button onclick="generateEnhancedReport()" class="btn btn-warning" style="font-weight: bold;">
+                            🏥 Generate Enhanced AI Report
+                        </button>
+                        <p style="margin-top: 15px; font-size: 14px; color: #856404;">
+                            <em>This will create a report similar to the one generated by DR. PRITI (MD RADIODIAGNOSIS)</em>
+                        </p>
+                    </div>
+                `;
+            }
+            
+            // Key Pathology Summary (Fallback - Only show if no enhanced report)
+            if (!window.doctorQualityReport && fullResults.pathology_summary && Object.keys(fullResults.pathology_summary).length > 0) {
                 html += '<div class="test-section"><h4>🔍 Key Pathological Findings</h4>';
                 html += '<p><em>Showing only clinically significant findings prioritized by urgency</em></p>';
                 

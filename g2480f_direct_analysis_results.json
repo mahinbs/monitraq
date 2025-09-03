@@ -1,0 +1,158 @@
+{
+  "analysis_date": "2025-09-03T23:45:48.892749",
+  "folder_path": "/Users/freibr/Desktop/G2480F",
+  "patient_info": {
+    "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+    "patient_id": "G2480F",
+    "patient_age": "030Y",
+    "patient_sex": "F",
+    "study_date": "20250708",
+    "modality": "MR",
+    "body_part": "PELVIS",
+    "study_description": "PELVIS",
+    "institution_name": "SUBHAM HOSPITAL"
+  },
+  "study_structure": {
+    "total_files": 491,
+    "series_distribution": {
+      "Ax T1 PROPELLER FS+C": {
+        "count": 2,
+        "modality": "MR",
+        "body_part": "PELVIS",
+        "slice_thickness": "3.5",
+        "pixel_spacing": "[0.4297, 0.4297]",
+        "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']"
+      },
+      "3-Plane Localizer": {
+        "count": 1,
+        "modality": "MR",
+        "body_part": "PELVIS",
+        "slice_thickness": "10",
+        "pixel_spacing": "[0.8984, 0.8984]",
+        "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']"
+      },
+      "Ax DWI": {
+        "count": 2,
+        "modality": "MR",
+        "body_part": "UTERUS",
+        "slice_thickness": "3.5",
+        "pixel_spacing": "[1.4844, 1.4844]",
+        "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']"
+      },
+      "Ax GRE T2*": {
+        "count": 3,
+        "modality": "MR",
+        "body_part": "UTERUS",
+        "slice_thickness": "3.5",
+        "pixel_spacing": "[0.4297, 0.4297]",
+        "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']"
+      },
+      "Ax T1 PROPELLER": {
+        "count": 2,
+        "modality": "MR",
+        "body_part": "PELVIS",
+        "slice_thickness": "3.5",
+        "pixel_spacing": "[0.4297, 0.4297]",
+        "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']"
+      }
+    },
+    "modality_distribution": {
+      "MR": 10
+    }
+  },
+  "series_analysis": {},
+  "potential_findings": [
+    {
+      "finding": "Left Paraovarian Hematoma",
+      "size": "4.7 x 4.2 cm",
+      "location": "Left adnexal region",
+      "signal_characteristics": {
+        "T1": "Hypointense (dark)",
+        "T2": "Predominantly hyperintense (bright)",
+        "GRE": "Shows blooming without diffusion restriction"
+      },
+      "ai_detection_capability": "Should detect with proper training",
+      "required_sequences": [
+        "T1",
+        "T2",
+        "GRE"
+      ],
+      "anatomical_landmarks": [
+        "left_adnexa",
+        "ovary",
+        "pelvis"
+      ]
+    },
+    {
+      "finding": "Endometrial Hematoma",
+      "size": "3.3 x 1.3 cm",
+      "location": "Endometrial cavity",
+      "signal_characteristics": {
+        "T1": "Hypointense contents",
+        "T2": "Hypointense contents",
+        "GRE": "Foci of blooming"
+      },
+      "ai_detection_capability": "Should detect with proper training",
+      "required_sequences": [
+        "T1",
+        "T2",
+        "GRE"
+      ],
+      "anatomical_landmarks": [
+        "uterus",
+        "endometrial_cavity",
+        "pelvis"
+      ]
+    },
+    {
+      "finding": "Mild Pelvic Fluid",
+      "size": "Small amount",
+      "location": "Pelvic cavity",
+      "signal_characteristics": {
+        "T1": "Hypointense",
+        "T2": "Hyperintense"
+      },
+      "ai_detection_capability": "Should detect with proper training",
+      "required_sequences": [
+        "T1",
+        "T2"
+      ],
+      "anatomical_landmarks": [
+        "pelvis",
+        "pelvic_cavity"
+      ]
+    }
+  ],
+  "technical_analysis": {
+    "mri_sequences_available": [
+      "Ax T1 PROPELLER FS+C",
+      "3-Plane Localizer",
+      "Ax DWI",
+      "Ax GRE T2*",
+      "Ax T1 PROPELLER"
+    ],
+    "anatomical_coverage": "Multi-planar (axial, sagittal, coronal)",
+    "contrast_enhancement": "Yes (T1 PROPELLER FS+C)",
+    "diffusion_imaging": "Yes (Ax DWI)",
+    "gradient_echo": "Yes (Ax GRE T2*)",
+    "spatial_resolution": "High (0.4297mm pixel spacing)",
+    "slice_thickness": "3.5mm (optimal for lesion detection)"
+  },
+  "summary": {
+    "study_quality": "Excellent - Comprehensive MRI protocol",
+    "ai_readiness": "High - All necessary sequences present",
+    "expected_ai_performance": "Should detect hematomas if properly trained",
+    "missing_ai_capabilities": [
+      "Anatomical specificity training",
+      "Signal intensity analysis (T1/T2)",
+      "Lesion measurement tools",
+      "Clinical correlation algorithms"
+    ],
+    "recommendations": [
+      "Train AI on pelvis-specific datasets",
+      "Implement T1/T2 signal analysis",
+      "Add measurement capabilities",
+      "Develop clinical interpretation algorithms"
+    ]
+  }
+}

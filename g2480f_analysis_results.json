@@ -1,0 +1,129 @@
+{
+  "analysis_date": "2025-09-03T23:39:45.929492",
+  "folder_path": "/Users/freibr/Desktop/G2480F",
+  "total_files": 491,
+  "sample_analysis": [
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.835.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "patient_age": "030Y",
+      "patient_sex": "F",
+      "study_date": "20250708",
+      "modality": "MR",
+      "body_part": "PELVIS",
+      "study_description": "PELVIS",
+      "institution_name": "SUBHAM HOSPITAL",
+      "series_description": "Ax T1 PROPELLER FS+C",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "pixel_spacing": "[0.4297, 0.4297]",
+      "slice_thickness": "3.5",
+      "file_size": 541868
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.821.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "patient_age": "030Y",
+      "patient_sex": "F",
+      "study_date": "20250708",
+      "modality": "MR",
+      "body_part": "PELVIS",
+      "study_description": "PELVIS",
+      "institution_name": "SUBHAM HOSPITAL",
+      "series_description": "Ax T1 PROPELLER FS+C",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "pixel_spacing": "[0.4297, 0.4297]",
+      "slice_thickness": "3.5",
+      "file_size": 541872
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949759.534.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "patient_age": "030Y",
+      "patient_sex": "F",
+      "study_date": "20250708",
+      "modality": "MR",
+      "body_part": "PELVIS",
+      "study_description": "PELVIS",
+      "institution_name": "SUBHAM HOSPITAL",
+      "series_description": "3-Plane Localizer",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "pixel_spacing": "[0.8984, 0.8984]",
+      "slice_thickness": "10",
+      "file_size": 541180
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.612.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "patient_age": "030Y",
+      "patient_sex": "F",
+      "study_date": "20250708",
+      "modality": "MR",
+      "body_part": "UTERUS",
+      "study_description": "PELVIS",
+      "institution_name": "SUBHAM HOSPITAL",
+      "series_description": "Ax DWI",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "pixel_spacing": "[1.4844, 1.4844]",
+      "slice_thickness": "3.5",
+      "file_size": 148762
+    },
+    {
+      "filename": "1.2.840.113619.2.514.13667961.48262.2717.1751949760.606.dcm",
+      "patient_name": "JAYANTI DAS DR.MANAS SARKAR",
+      "patient_id": "G2480F",
+      "patient_age": "030Y",
+      "patient_sex": "F",
+      "study_date": "20250708",
+      "modality": "MR",
+      "body_part": "UTERUS",
+      "study_description": "PELVIS",
+      "institution_name": "SUBHAM HOSPITAL",
+      "series_description": "Ax DWI",
+      "image_type": "['ORIGINAL', 'PRIMARY', 'OTHER']",
+      "pixel_spacing": "[1.4844, 1.4844]",
+      "slice_thickness": "3.5",
+      "file_size": 148762
+    }
+  ],
+  "file_size_distribution": {
+    "min_size": 136562,
+    "max_size": 541916,
+    "avg_size": 393339.1527494908,
+    "total_size": 193129524
+  },
+  "modality_distribution": {
+    "MR": 491
+  },
+  "series_distribution": {
+    "Ax T1 PROPELLER FS+C": 41,
+    "3-Plane Localizer": 27,
+    "Ax DWI": 138,
+    "Ax GRE T2*": 41,
+    "Ax T1 PROPELLER": 46,
+    "Sag T2 PROPELLER": 31,
+    "Ax T2 PROP SFOV": 41,
+    "Cor T2 PROP SFOV": 39,
+    "Ax T2 PROP SFOV FS": 41,
+    "ADC (10^-6 mm\u00b2/s)": 46
+  },
+  "patient_verification": {
+    "patient_ids": [
+      "G2480F"
+    ],
+    "patient_names": [
+      "JAYANTI DAS DR.M SARKAR",
+      "JAYANTI DAS DR.MANAS SARKAR"
+    ],
+    "consistent_patient": false
+  },
+  "summary": {
+    "folder_contains_jayanti_das": true,
+    "patient_id_matches": true,
+    "total_data_size_gb": 0.17986588552594185,
+    "analysis_complete": true
+  }
+}

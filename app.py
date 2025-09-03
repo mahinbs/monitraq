@@ -28,6 +28,7 @@ from database_manager import db_manager
 from pelvis_test_analyzer import PelvisTestAnalyzer
 from brain_test_analyzer import BrainTestAnalyzer
 from analyze_pelvis_33 import Pelvis33Analyzer
+from enhanced_doctor_report_generator import EnhancedDoctorReportGenerator
 import hashlib
 
 # Load environment variables
@@ -77,6 +78,9 @@ pelvis_analyzer = Pelvis33Analyzer()
 
 # Initialize Brain Test Analyzer
 brain_analyzer = BrainTestAnalyzer()
+
+# Initialize Enhanced Doctor Report Generator
+enhanced_report_generator = EnhancedDoctorReportGenerator()
 
 
 class GeminiAnalyzer:
@@ -905,6 +909,11 @@ def index():
 def pelvis_test():
     """Pelvis test analysis page"""
     return render_template('pelvis_test.html')
+
+@app.route('/enhanced-report')
+def enhanced_report_display():
+    """Enhanced doctor-quality report display page"""
+    return render_template('enhanced_report_display.html')
 
 @app.route('/brain-test')
 def brain_test():
@@ -3370,12 +3379,124 @@ def upload_pelvis_files():
             'confidence': results.get('overall_findings', {}).get('overall_confidence', 0.0)
         }
         
-        return jsonify({
-            'success': True,
-            'summary': summary,
-            'full_results': results,
-            'message': f'Successfully analyzed {len(uploaded_files)} files'
-        })
+        # Generate doctor-quality report
+        try:
+            # Extract real patient information from DICOM files
+            import pydicom
+            
+            # Get the first DICOM file to extract patient info
+            first_dicom_file = None
+            for filepath in uploaded_files:
+                try:
+                    ds = pydicom.dcmread(filepath)
+                    if hasattr(ds, 'PatientName') and hasattr(ds, 'PatientID'):
+                        first_dicom_file = ds
+                        break
+                except:
+                    continue
+            
+            # Prepare analysis data for report generation with real patient data
+            if first_dicom_file:
+                # Extract real patient information
+                patient_name = str(getattr(first_dicom_file, 'PatientName', 'Unknown Patient'))
+                patient_id = str(getattr(first_dicom_file, 'PatientID', 'Unknown ID'))
+                patient_age = str(getattr(first_dicom_file, 'PatientAge', 'Unknown Age'))
+                patient_sex = str(getattr(first_dicom_file, 'PatientSex', 'Unknown Sex'))
+                study_date = str(getattr(first_dicom_file, 'StudyDate', 'Unknown Date'))
+                modality = str(getattr(first_dicom_file, 'Modality', 'Unknown Modality'))
+                body_part = str(getattr(first_dicom_file, 'BodyPartExamined', 'Unknown Body Part'))
+                study_description = str(getattr(first_dicom_file, 'StudyDescription', 'Unknown Study'))
+                institution = str(getattr(first_dicom_file, 'InstitutionName', 'Unknown Institution'))
+                referring_physician = str(getattr(first_dicom_file, 'ReferringPhysicianName', 'Unknown Physician'))
+                
+                # Format study date if available
+                if study_date != 'Unknown Date' and len(study_date) == 8:
+                    try:
+                        formatted_date = f"{study_date[4:6]}/{study_date[6:8]}/{study_date[0:4]}"
+                        study_date = formatted_date
+                    except:
+                        pass
+                
+                # Determine sequences from series descriptions
+                sequences = []
+                if 'series_results' in results:
+                    for series_name in results['series_results'].keys():
+                        if 'T1' in series_name.upper():
+                            sequences.append('T1')
+                        elif 'T2' in series_name.upper():
+                            sequences.append('T2')
+                        elif 'DWI' in series_name.upper() or 'DIFFUSION' in series_name.upper():
+                            sequences.append('DWI')
+                        elif 'GRE' in series_name.upper() or 'GRADIENT' in series_name.upper():
+                            sequences.append('GRE')
+                        elif 'FLAIR' in series_name.upper():
+                            sequences.append('FLAIR')
+                
+                # Remove duplicates and ensure we have some sequences
+                sequences = list(set(sequences))
+                if not sequences:
+                    sequences = ['T1', 'T2', 'DWI', 'GRE']  # Default fallback
+                
+                # Determine if contrast was used
+                contrast_used = 'With and without contrast' if any('+C' in series.upper() for series in results.get('series_results', {}).keys()) else 'Without contrast'
+                
+            else:
+                # Fallback to default values if no DICOM info available
+                patient_name = 'Unknown Patient'
+                patient_id = 'Unknown ID'
+                patient_age = 'Unknown Age'
+                patient_sex = 'Unknown Sex'
+                study_date = 'Unknown Date'
+                modality = 'Unknown Modality'
+                body_part = 'Unknown Body Part'
+                study_description = 'Unknown Study'
+                institution = 'Unknown Institution'
+                referring_physician = 'Unknown Physician'
+                sequences = ['T1', 'T2', 'DWI', 'GRE']
+                contrast_used = 'Without contrast'
+            
+            analysis_data = {
+                'patient_name': patient_name,
+                'patient_id': patient_id,
+                'age': patient_age,
+                'sex': patient_sex,
+                'study_date': study_date,
+                'modality': modality,
+                'body_part': body_part,
+                'study_description': study_description,
+                'institution': institution,
+                'referring_physician': referring_physician,
+                'sequences': sequences,
+                'contrast': contrast_used,
+                'pathologies': results.get('pathology_summary', {}).keys(),
+                'anatomical_landmarks': results.get('overall_findings', {}).get('anatomical_landmarks', []),
+                'measurements': results.get('measurements', {}),
+                'locations': results.get('locations', {})
+            }
+            
+            # Generate the enhanced report
+            doctor_report = enhanced_report_generator.generate_doctor_quality_report(analysis_data)
+            formatted_report = enhanced_report_generator.format_report_for_display(doctor_report)
+            
+            # Add the doctor-quality report to the response
+            return jsonify({
+                'success': True,
+                'summary': summary,
+                'full_results': results,
+                'doctor_quality_report': doctor_report,
+                'formatted_report': formatted_report,
+                'message': f'Successfully analyzed {len(uploaded_files)} files and generated doctor-quality report'
+            })
+            
+        except Exception as report_error:
+            logger.error(f"Error generating doctor-quality report: {report_error}")
+            # Return the basic results if report generation fails
+            return jsonify({
+                'success': True,
+                'summary': summary,
+                'full_results': results,
+                'message': f'Successfully analyzed {len(uploaded_files)} files (report generation failed)'
+            })
         
     except Exception as e:
         print(f"Error in file upload analysis: {e}")
@@ -3385,6 +3506,35 @@ def upload_pelvis_files():
             'success': False,
             'error': str(e)
         }), 500
+
+@app.route('/api/pelvis/doctor-report', methods=['POST'])
+def generate_doctor_quality_report():
+    """Generate a doctor-quality medical report"""
+    try:
+        data = request.get_json()
+        
+        # Extract analysis data
+        analysis_data = data.get('analysis_data', {})
+        
+        if not analysis_data:
+            return jsonify({'error': 'No analysis data provided'}), 400
+        
+        # Generate doctor-quality report
+        report = enhanced_report_generator.generate_doctor_quality_report(analysis_data)
+        
+        # Format the report for display
+        formatted_report = enhanced_report_generator.format_report_for_display(report)
+        
+        return jsonify({
+            'success': True,
+            'report': report,
+            'formatted_report': formatted_report,
+            'message': 'Doctor-quality report generated successfully'
+        })
+        
+    except Exception as e:
+        logger.error(f"Error generating doctor-quality report: {e}")
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/api/pelvis/progress/<session_id>')
 def get_analysis_progress(session_id):

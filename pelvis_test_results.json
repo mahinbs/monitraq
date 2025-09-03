@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-09-03T23:09:17.218463",
+  "analysis_date": "2025-09-03T23:44:31.215710",
   "folder_path": "pelvis",
   "total_files": 216,
   "successful_analyses": 216,
@@ -20,22 +20,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -66,19 +66,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -110,19 +110,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -154,22 +154,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -200,22 +200,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -246,19 +246,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -290,19 +290,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -334,22 +334,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -380,19 +380,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -424,19 +424,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -468,19 +468,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -512,22 +512,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -558,19 +558,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -602,15 +602,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
             "osteopenia"
@@ -644,15 +644,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
             "osteopenia"
@@ -686,19 +686,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -730,19 +730,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -774,22 +774,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -820,19 +820,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -864,19 +864,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -908,19 +908,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -952,19 +952,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -996,22 +996,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -1042,19 +1042,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -1086,19 +1086,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -1130,19 +1130,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -1174,19 +1174,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -1218,19 +1218,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -1262,19 +1262,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -1306,22 +1306,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -1352,22 +1352,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -1398,22 +1398,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -1444,22 +1444,22 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "osteopenia",
-            "fracture_suspicion",
             "asymmetrical_findings",
-            "degenerative_changes"
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "fracture_suspicion"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -1490,19 +1490,19 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "coccyx",
-            "ischium",
-            "pubis",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "ischium",
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubis"
           ],
           "pathologies": [
-            "fracture_suspicion",
             "degenerative_changes",
+            "fracture_suspicion",
             "osteopenia"
           ],
           "measurements": {
@@ -1528,22 +1528,22 @@
       },
       "confidence_score": 0.9999999999999998,
       "anatomical_landmarks": [
-        "acetabulum",
-        "ilium",
-        "coccyx",
-        "ischium",
-        "pubis",
-        "femoral_head",
-        "sacroiliac_joints",
         "pelvis",
-        "sacrum"
+        "ischium",
+        "sacroiliac_joints",
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "sacrum",
+        "ilium",
+        "pubis"
       ],
       "pathologies": [
-        "structural_abnormality",
-        "osteopenia",
-        "fracture_suspicion",
         "asymmetrical_findings",
-        "degenerative_changes"
+        "osteopenia",
+        "structural_abnormality",
+        "degenerative_changes",
+        "fracture_suspicion"
       ],
       "measurements": {
         "image_width_pixels": 320.0,
@@ -1571,14 +1571,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1610,14 +1610,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1649,14 +1649,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1688,14 +1688,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1727,14 +1727,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1766,14 +1766,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1805,14 +1805,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1844,14 +1844,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1883,14 +1883,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1922,14 +1922,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -1961,14 +1961,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2000,14 +2000,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2039,14 +2039,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2078,14 +2078,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2117,14 +2117,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2156,14 +2156,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2195,18 +2195,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -2237,14 +2237,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2276,14 +2276,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2315,14 +2315,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2354,18 +2354,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -2396,18 +2396,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -2438,14 +2438,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2477,14 +2477,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2516,14 +2516,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2555,14 +2555,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2594,14 +2594,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2633,14 +2633,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2672,14 +2672,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2711,14 +2711,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2744,18 +2744,18 @@
       },
       "confidence_score": 0.8200000000000003,
       "anatomical_landmarks": [
-        "acetabulum",
-        "ilium",
-        "sacrum",
-        "coccyx",
-        "femoral_head",
-        "sacroiliac_joints",
         "pelvis",
+        "sacroiliac_joints",
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "sacrum",
+        "ilium",
         "pubic_symphysis"
       ],
       "pathologies": [
-        "structural_abnormality",
-        "asymmetrical_findings"
+        "asymmetrical_findings",
+        "structural_abnormality"
       ],
       "measurements": {
         "image_width_pixels": 288.0,
@@ -2783,14 +2783,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2822,14 +2822,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2861,14 +2861,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2900,14 +2900,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -2939,18 +2939,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -2981,14 +2981,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3020,18 +3020,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3062,18 +3062,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3104,18 +3104,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3146,18 +3146,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3188,18 +3188,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3230,18 +3230,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3272,18 +3272,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3314,18 +3314,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3356,18 +3356,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3398,18 +3398,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3440,18 +3440,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3482,18 +3482,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3524,18 +3524,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3566,14 +3566,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3605,18 +3605,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3647,18 +3647,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3689,14 +3689,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3728,14 +3728,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3767,14 +3767,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3806,18 +3806,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 288.0,
@@ -3848,14 +3848,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3887,14 +3887,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3926,14 +3926,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3965,14 +3965,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -3998,18 +3998,18 @@
       },
       "confidence_score": 0.9133333333333334,
       "anatomical_landmarks": [
-        "acetabulum",
-        "ilium",
-        "sacrum",
-        "coccyx",
-        "femoral_head",
-        "sacroiliac_joints",
         "pelvis",
+        "sacroiliac_joints",
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "sacrum",
+        "ilium",
         "pubic_symphysis"
       ],
       "pathologies": [
-        "structural_abnormality",
-        "asymmetrical_findings"
+        "asymmetrical_findings",
+        "structural_abnormality"
       ],
       "measurements": {
         "image_width_pixels": 288.0,
@@ -4037,15 +4037,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -4076,15 +4076,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -4115,10 +4115,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4151,10 +4151,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4187,10 +4187,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4223,10 +4223,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4259,15 +4259,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -4298,15 +4298,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -4337,10 +4337,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4373,10 +4373,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4409,10 +4409,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4445,10 +4445,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4481,10 +4481,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4517,10 +4517,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4553,15 +4553,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -4592,15 +4592,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -4631,15 +4631,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -4670,10 +4670,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4706,10 +4706,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4742,10 +4742,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4778,10 +4778,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4814,10 +4814,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4850,10 +4850,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4886,10 +4886,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4922,10 +4922,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4958,10 +4958,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -4994,10 +4994,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -5030,10 +5030,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -5066,10 +5066,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -5102,15 +5102,15 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 256.0,
@@ -5141,10 +5141,10 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
             "pelvis_overview",
             "pelvis",
+            "acetabulum",
+            "ilium",
             "sacrum"
           ],
           "pathologies": [],
@@ -5171,15 +5171,15 @@
       },
       "confidence_score": 0.8516129032258067,
       "anatomical_landmarks": [
-        "acetabulum",
-        "ilium",
         "pelvis_overview",
         "pelvis",
-        "sacrum"
+        "acetabulum",
+        "sacrum",
+        "ilium"
       ],
       "pathologies": [
-        "structural_abnormality",
-        "asymmetrical_findings"
+        "asymmetrical_findings",
+        "structural_abnormality"
       ],
       "measurements": {
         "image_width_pixels": 192.0,
@@ -5234,14 +5234,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5273,14 +5273,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5312,14 +5312,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5351,14 +5351,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5390,14 +5390,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5429,14 +5429,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5468,18 +5468,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -5510,14 +5510,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5549,14 +5549,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5588,14 +5588,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5627,14 +5627,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5666,14 +5666,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5705,14 +5705,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5744,14 +5744,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5783,14 +5783,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5822,14 +5822,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5861,14 +5861,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5900,14 +5900,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5939,14 +5939,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -5978,14 +5978,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6017,14 +6017,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6056,14 +6056,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6095,14 +6095,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6134,14 +6134,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6173,14 +6173,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6212,14 +6212,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6251,14 +6251,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6290,18 +6290,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -6332,18 +6332,18 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [
-            "structural_abnormality",
-            "asymmetrical_findings"
+            "asymmetrical_findings",
+            "structural_abnormality"
           ],
           "measurements": {
             "image_width_pixels": 320.0,
@@ -6374,14 +6374,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6407,18 +6407,18 @@
       },
       "confidence_score": 0.8200000000000004,
       "anatomical_landmarks": [
-        "acetabulum",
-        "ilium",
-        "sacrum",
-        "coccyx",
-        "femoral_head",
-        "sacroiliac_joints",
         "pelvis",
+        "sacroiliac_joints",
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "sacrum",
+        "ilium",
         "pubic_symphysis"
       ],
       "pathologies": [
-        "structural_abnormality",
-        "asymmetrical_findings"
+        "asymmetrical_findings",
+        "structural_abnormality"
       ],
       "measurements": {
         "image_width_pixels": 320.0,
@@ -6446,14 +6446,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6485,14 +6485,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6524,14 +6524,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6563,14 +6563,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6602,14 +6602,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6641,14 +6641,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6680,14 +6680,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6719,14 +6719,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6758,14 +6758,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6797,14 +6797,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6836,14 +6836,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6875,14 +6875,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6914,14 +6914,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6953,14 +6953,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -6992,14 +6992,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7031,14 +7031,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7070,14 +7070,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7109,14 +7109,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7148,14 +7148,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7187,14 +7187,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7226,14 +7226,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7265,14 +7265,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7304,14 +7304,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7343,14 +7343,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7382,14 +7382,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7421,14 +7421,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7460,14 +7460,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7499,14 +7499,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7538,14 +7538,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7577,14 +7577,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7616,14 +7616,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7655,14 +7655,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7694,14 +7694,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7733,14 +7733,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7772,14 +7772,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7811,14 +7811,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7850,14 +7850,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7889,14 +7889,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7928,14 +7928,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -7967,14 +7967,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8006,14 +8006,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8045,14 +8045,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8084,14 +8084,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8123,14 +8123,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8162,14 +8162,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8201,14 +8201,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8240,14 +8240,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8279,14 +8279,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8318,14 +8318,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8357,14 +8357,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8396,14 +8396,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8435,14 +8435,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8474,14 +8474,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8513,14 +8513,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8552,14 +8552,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8591,14 +8591,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8630,14 +8630,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8669,14 +8669,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8708,14 +8708,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8747,14 +8747,14 @@
           "patient_age": "023Y",
           "patient_sex": "M",
           "anatomical_landmarks": [
-            "acetabulum",
-            "ilium",
-            "pubic_symphysis",
-            "coccyx",
-            "femoral_head",
-            "sacroiliac_joints",
             "pelvis",
-            "sacrum"
+            "sacroiliac_joints",
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "sacrum",
+            "ilium",
+            "pubic_symphysis"
           ],
           "pathologies": [],
           "measurements": {
@@ -8780,13 +8780,13 @@
       },
       "confidence_score": 0.7999999999999993,
       "anatomical_landmarks": [
-        "acetabulum",
-        "ilium",
-        "sacrum",
-        "coccyx",
-        "femoral_head",
-        "sacroiliac_joints",
         "pelvis",
+        "sacroiliac_joints",
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "sacrum",
+        "ilium",
         "pubic_symphysis"
       ],
       "pathologies": [],
@@ -8807,18 +8807,18 @@
     "total_pathologies": 5,
     "key_pathologies_count": 1,
     "most_common_landmarks": [
-      "acetabulum",
-      "ilium",
       "pelvis",
+      "acetabulum",
       "sacrum",
-      "coccyx"
+      "ilium",
+      "sacroiliac_joints"
     ],
     "most_common_pathologies": [
-      "structural_abnormality",
       "asymmetrical_findings",
+      "structural_abnormality",
       "osteopenia",
-      "fracture_suspicion",
-      "degenerative_changes"
+      "degenerative_changes",
+      "fracture_suspicion"
     ],
     "series_with_findings": 6,
     "overall_confidence": 0.8007066052227342
