@@ -383,7 +383,7 @@
             <div class="upload-warning">
                 <strong>⚠️ Important:</strong> This analyzer is designed specifically for <strong>pelvis-related DICOM images</strong>. 
                 Files from other body parts (head, chest, abdomen, etc.) will be rejected with an error message. 
-                Only upload images of the pelvis, sacrum, coccyx, ilium, ischium, pubis, acetabulum, or hip regions.
+                Only upload images of the pelvis, sacrum, coccyx, ilium, ischium, pubis, acetabulum, hip regions, or fistulogram studies.
             </div>
             
             <div class="upload-area" id="uploadArea">
@@ -912,7 +912,7 @@
                         html += '<div class="upload-warning">';
                         html += '<strong>💡 What This Means:</strong> Your files were detected as brain MRI images, not pelvis images. ';
                         html += 'The system correctly rejected them to prevent incorrect analysis. ';
-                        html += 'Please upload only DICOM files of the pelvis, sacrum, coccyx, ilium, ischium, pubis, acetabulum, or hip regions.';
+                        html += 'Please upload only DICOM files of the pelvis, sacrum, coccyx, ilium, ischium, pubis, acetabulum, hip regions, or fistulogram studies.';
                         html += '</div>';
                         html += '</div>';
                     }
@@ -1010,6 +1010,7 @@
         function getCategoryIcon(category) {
             const icons = {
                 'fractures': '🦴',
+                'fistulogram': '🔗',
                 'tumors': '🩺',
                 'vascular': '💉',
                 'inflammatory': '🔥',
@@ -1022,6 +1023,7 @@
         function getCategoryPriority(category) {
             const priorities = {
                 'fractures': 'urgent',
+                'fistulogram': 'high',
                 'tumors': 'high',
                 'vascular': 'high',
                 'inflammatory': 'medium',
@@ -1049,7 +1051,8 @@ ANALYSIS OVERVIEW:
 KEY PATHOLOGICAL FINDINGS (Prioritized by Clinical Significance):
 ${Object.entries(currentResults.pathology_summary || {}).map(([category, pathologies]) => {
     const priority = getCategoryPriority(category);
-    return `${category.toUpperCase()} (${priority.toUpperCase()} PRIORITY):\n${pathologies.map(p => `  - ${p}`).join('\n')}`;
+    const categoryName = category === 'fistulogram' ? 'FISTULOGRAM FINDINGS' : category.toUpperCase();
+    return `${categoryName} (${priority.toUpperCase()} PRIORITY):\n${pathologies.map(p => `  - ${p}`).join('\n')}`;
 }).join('\n\n')}
 
 CLINICAL RECOMMENDATIONS:

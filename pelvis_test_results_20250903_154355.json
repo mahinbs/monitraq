@@ -1,0 +1,1704 @@
+{
+  "analysis_date": "2025-09-03T15:43:55.540717",
+  "folder_path": "pelvis",
+  "total_files": 216,
+  "successful_analyses": 31,
+  "failed_analyses": 0,
+  "series_results": {
+    "t2_tse_sag_p2_320_7": {
+      "series_name": "t2_tse_sag_p2_320_7",
+      "series_path": "pelvis/t2_tse_sag_p2_320_7",
+      "file_count": 34,
+      "successful_count": 5,
+      "failed_count": 0,
+      "dicom_files": [
+        {
+          "filename": "IM-0005-0011.dcm",
+          "series": "t2_tse_sag_p2_320_7",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "ischium",
+            "femoral_head",
+            "pubis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "asymmetrical_findings",
+            "fracture_suspicion"
+          ],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 102400.0,
+            "mean_intensity": 88.638642578125,
+            "std_intensity": 62.03800621986115,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        {
+          "filename": "IM-0005-0005.dcm",
+          "series": "t2_tse_sag_p2_320_7",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "ischium",
+            "femoral_head",
+            "pubis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "osteopenia",
+            "degenerative_changes",
+            "fracture_suspicion"
+          ],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 102400.0,
+            "mean_intensity": 60.5356640625,
+            "std_intensity": 55.49439281877626,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        {
+          "filename": "IM-0005-0004.dcm",
+          "series": "t2_tse_sag_p2_320_7",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "ischium",
+            "femoral_head",
+            "pubis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "osteopenia",
+            "degenerative_changes",
+            "fracture_suspicion"
+          ],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 102400.0,
+            "mean_intensity": 63.88396484375,
+            "std_intensity": 57.8155523915712,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        {
+          "filename": "IM-0005-0010.dcm",
+          "series": "t2_tse_sag_p2_320_7",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "ischium",
+            "femoral_head",
+            "pubis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "asymmetrical_findings",
+            "fracture_suspicion"
+          ],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 102400.0,
+            "mean_intensity": 82.51025390625,
+            "std_intensity": 61.561320676632306,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        {
+          "filename": "IM-0005-0006.dcm",
+          "series": "t2_tse_sag_p2_320_7",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "ischium",
+            "femoral_head",
+            "pubis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "osteopenia",
+            "structural_abnormality",
+            "degenerative_changes",
+            "asymmetrical_findings",
+            "fracture_suspicion"
+          ],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 102400.0,
+            "mean_intensity": 63.041337890625,
+            "std_intensity": 56.08836011855021,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        }
+      ],
+      "anatomical_findings": [
+        "coccyx",
+        "acetabulum",
+        "ischium",
+        "femoral_head",
+        "pubis",
+        "sacroiliac_joints",
+        "sacrum",
+        "ilium",
+        "pelvis"
+      ],
+      "pathological_findings": [
+        "osteopenia",
+        "structural_abnormality",
+        "degenerative_changes",
+        "asymmetrical_findings",
+        "fracture_suspicion"
+      ],
+      "measurements": {
+        "image_width_pixels": [
+          320.0,
+          320.0,
+          320.0,
+          320.0,
+          320.0
+        ],
+        "image_height_pixels": [
+          320.0,
+          320.0,
+          320.0,
+          320.0,
+          320.0
+        ],
+        "image_area_pixels": [
+          102400.0,
+          102400.0,
+          102400.0,
+          102400.0,
+          102400.0
+        ],
+        "mean_intensity": [
+          88.638642578125,
+          60.5356640625,
+          63.88396484375,
+          82.51025390625,
+          63.041337890625
+        ],
+        "std_intensity": [
+          62.03800621986115,
+          55.49439281877626,
+          57.8155523915712,
+          61.561320676632306,
+          56.08836011855021
+        ],
+        "min_intensity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_intensity": [
+          255.0,
+          255.0,
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "confidence_score": 0.14705882352941174
+    },
+    "t2_trufi_cor_p2_bh_4": {
+      "series_name": "t2_trufi_cor_p2_bh_4",
+      "series_path": "pelvis/t2_trufi_cor_p2_bh_4",
+      "file_count": 30,
+      "successful_count": 5,
+      "failed_count": 0,
+      "dicom_files": [
+        {
+          "filename": "IM-0002-0003.dcm",
+          "series": "t2_trufi_cor_p2_bh_4",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 56.25326605902778,
+            "std_intensity": 45.26812596369713,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0002-0017.dcm",
+          "series": "t2_trufi_cor_p2_bh_4",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 27.269694010416668,
+            "std_intensity": 25.584278652834524,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0002-0016.dcm",
+          "series": "t2_trufi_cor_p2_bh_4",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 28.882628038194444,
+            "std_intensity": 27.102823393302668,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0002-0002.dcm",
+          "series": "t2_trufi_cor_p2_bh_4",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 71.55928819444445,
+            "std_intensity": 55.547511770582986,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0002-0014.dcm",
+          "series": "t2_trufi_cor_p2_bh_4",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 50.024663628472226,
+            "std_intensity": 46.26318657496491,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        }
+      ],
+      "anatomical_findings": [
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "pubic_symphysis",
+        "sacroiliac_joints",
+        "sacrum",
+        "ilium",
+        "pelvis"
+      ],
+      "pathological_findings": [],
+      "measurements": {
+        "image_width_pixels": [
+          288.0,
+          288.0,
+          288.0,
+          288.0,
+          288.0
+        ],
+        "image_height_pixels": [
+          320.0,
+          320.0,
+          320.0,
+          320.0,
+          320.0
+        ],
+        "image_area_pixels": [
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0
+        ],
+        "mean_intensity": [
+          56.25326605902778,
+          27.269694010416668,
+          28.882628038194444,
+          71.55928819444445,
+          50.024663628472226
+        ],
+        "std_intensity": [
+          45.26812596369713,
+          25.584278652834524,
+          27.102823393302668,
+          55.547511770582986,
+          46.26318657496491
+        ],
+        "min_intensity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_intensity": [
+          255.0,
+          255.0,
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "confidence_score": 0.1333333333333333
+    },
+    "t2_trufi_sag_p2_bh_3": {
+      "series_name": "t2_trufi_sag_p2_bh_3",
+      "series_path": "pelvis/t2_trufi_sag_p2_bh_3",
+      "file_count": 30,
+      "successful_count": 5,
+      "failed_count": 0,
+      "dicom_files": [
+        {
+          "filename": "IM-0001-0027.dcm",
+          "series": "t2_trufi_sag_p2_bh_3",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 55.25901692708333,
+            "std_intensity": 52.63256226252233,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0001-0026.dcm",
+          "series": "t2_trufi_sag_p2_bh_3",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 60.42737630208333,
+            "std_intensity": 56.168199774451274,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0001-0018.dcm",
+          "series": "t2_trufi_sag_p2_bh_3",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 51.66331380208333,
+            "std_intensity": 47.01987541992031,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0001-0030.dcm",
+          "series": "t2_trufi_sag_p2_bh_3",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 46.151128472222226,
+            "std_intensity": 44.34956199220193,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0001-0024.dcm",
+          "series": "t2_trufi_sag_p2_bh_3",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "structural_abnormality",
+            "asymmetrical_findings"
+          ],
+          "measurements": {
+            "image_width_pixels": 288.0,
+            "image_height_pixels": 320.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 59.02030164930556,
+            "std_intensity": 52.26299938551287,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        }
+      ],
+      "anatomical_findings": [
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "pubic_symphysis",
+        "sacroiliac_joints",
+        "sacrum",
+        "ilium",
+        "pelvis"
+      ],
+      "pathological_findings": [
+        "structural_abnormality",
+        "asymmetrical_findings"
+      ],
+      "measurements": {
+        "image_width_pixels": [
+          288.0,
+          288.0,
+          288.0,
+          288.0,
+          288.0
+        ],
+        "image_height_pixels": [
+          320.0,
+          320.0,
+          320.0,
+          320.0,
+          320.0
+        ],
+        "image_area_pixels": [
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0
+        ],
+        "mean_intensity": [
+          55.25901692708333,
+          60.42737630208333,
+          51.66331380208333,
+          46.151128472222226,
+          59.02030164930556
+        ],
+        "std_intensity": [
+          52.63256226252233,
+          56.168199774451274,
+          47.01987541992031,
+          44.34956199220193,
+          52.26299938551287
+        ],
+        "min_intensity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_intensity": [
+          255.0,
+          255.0,
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "confidence_score": 0.13999999999999996
+    },
+    "Localizers_1": {
+      "series_name": "Localizers_1",
+      "series_path": "pelvis/Localizers_1",
+      "file_count": 31,
+      "successful_count": 5,
+      "failed_count": 0,
+      "dicom_files": [
+        {
+          "filename": "IM-0006-0012-0002.dcm",
+          "series": "Localizers_1",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "pelvis_overview",
+            "acetabulum",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "structural_abnormality",
+            "asymmetrical_findings"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.19184875488281,
+            "std_intensity": 44.10885556213785,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        {
+          "filename": "IM-0006-0013-0002.dcm",
+          "series": "Localizers_1",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "pelvis_overview",
+            "acetabulum",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [
+            "structural_abnormality",
+            "asymmetrical_findings"
+          ],
+          "measurements": {
+            "image_width_pixels": 256.0,
+            "image_height_pixels": 256.0,
+            "image_area_pixels": 65536.0,
+            "mean_intensity": 40.67817687988281,
+            "std_intensity": 46.669213231988756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.9999999999999999
+        },
+        {
+          "filename": "IM-0006-0013-0001.dcm",
+          "series": "Localizers_1",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "pelvis_overview",
+            "acetabulum",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 55.59375,
+            "std_intensity": 54.07345345042756,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0006-0012-0001.dcm",
+          "series": "Localizers_1",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "pelvis_overview",
+            "acetabulum",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 43.15247938368056,
+            "std_intensity": 41.26214767253039,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0006-0005-0002.dcm",
+          "series": "Localizers_1",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "pelvis_overview",
+            "acetabulum",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 192.0,
+            "image_height_pixels": 192.0,
+            "image_area_pixels": 36864.0,
+            "mean_intensity": 26.595350477430557,
+            "std_intensity": 28.119896741422423,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        }
+      ],
+      "anatomical_findings": [
+        "pelvis_overview",
+        "acetabulum",
+        "sacrum",
+        "ilium",
+        "pelvis"
+      ],
+      "pathological_findings": [
+        "structural_abnormality",
+        "asymmetrical_findings"
+      ],
+      "measurements": {
+        "image_width_pixels": [
+          256.0,
+          256.0,
+          192.0,
+          192.0,
+          192.0
+        ],
+        "image_height_pixels": [
+          256.0,
+          256.0,
+          192.0,
+          192.0,
+          192.0
+        ],
+        "image_area_pixels": [
+          65536.0,
+          65536.0,
+          36864.0,
+          36864.0,
+          36864.0
+        ],
+        "mean_intensity": [
+          40.19184875488281,
+          40.67817687988281,
+          55.59375,
+          43.15247938368056,
+          26.595350477430557
+        ],
+        "std_intensity": [
+          44.10885556213785,
+          46.669213231988756,
+          54.07345345042756,
+          41.26214767253039,
+          28.119896741422423
+        ],
+        "min_intensity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_intensity": [
+          255.0,
+          255.0,
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "confidence_score": 0.14193548387096772
+    },
+    "OsiriX_Annotations_SR_5004": {
+      "series_name": "OsiriX_Annotations_SR_5004",
+      "series_path": "pelvis/OsiriX_Annotations_SR_5004",
+      "file_count": 1,
+      "successful_count": 1,
+      "failed_count": 0,
+      "dicom_files": [
+        {
+          "filename": "IM-0007-0000.dcm",
+          "series": "OsiriX_Annotations_SR_5004",
+          "modality": "SR",
+          "body_part": "Pelvis",
+          "study_date": "",
+          "patient_age": "Unknown",
+          "patient_sex": "M",
+          "anatomical_landmarks": [],
+          "pathologies": [],
+          "measurements": {},
+          "locations": {},
+          "confidence": 0.4
+        }
+      ],
+      "anatomical_findings": [],
+      "pathological_findings": [],
+      "measurements": {},
+      "confidence_score": 0.4
+    },
+    "t2_trufi_cor_p2_bh_6": {
+      "series_name": "t2_trufi_cor_p2_bh_6",
+      "series_path": "pelvis/t2_trufi_cor_p2_bh_6",
+      "file_count": 30,
+      "successful_count": 5,
+      "failed_count": 0,
+      "dicom_files": [
+        {
+          "filename": "IM-0004-0005.dcm",
+          "series": "t2_trufi_cor_p2_bh_6",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 59.0541015625,
+            "std_intensity": 52.65442630472075,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0004-0011.dcm",
+          "series": "t2_trufi_cor_p2_bh_6",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 58.402180989583336,
+            "std_intensity": 53.6706494140376,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0004-0010.dcm",
+          "series": "t2_trufi_cor_p2_bh_6",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 57.62724609375,
+            "std_intensity": 53.101473118177374,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0004-0004.dcm",
+          "series": "t2_trufi_cor_p2_bh_6",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 59.41325954861111,
+            "std_intensity": 52.94920532122884,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0004-0012.dcm",
+          "series": "t2_trufi_cor_p2_bh_6",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 54.15691189236111,
+            "std_intensity": 50.593381747630865,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        }
+      ],
+      "anatomical_findings": [
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "pubic_symphysis",
+        "sacroiliac_joints",
+        "sacrum",
+        "ilium",
+        "pelvis"
+      ],
+      "pathological_findings": [],
+      "measurements": {
+        "image_width_pixels": [
+          320.0,
+          320.0,
+          320.0,
+          320.0,
+          320.0
+        ],
+        "image_height_pixels": [
+          288.0,
+          288.0,
+          288.0,
+          288.0,
+          288.0
+        ],
+        "image_area_pixels": [
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0
+        ],
+        "mean_intensity": [
+          59.0541015625,
+          58.402180989583336,
+          57.62724609375,
+          59.41325954861111,
+          54.15691189236111
+        ],
+        "std_intensity": [
+          52.65442630472075,
+          53.6706494140376,
+          53.101473118177374,
+          52.94920532122884,
+          50.593381747630865
+        ],
+        "min_intensity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_intensity": [
+          255.0,
+          255.0,
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "confidence_score": 0.1333333333333333
+    },
+    "t2_trufi_tra_p2_bh_5": {
+      "series_name": "t2_trufi_tra_p2_bh_5",
+      "series_path": "pelvis/t2_trufi_tra_p2_bh_5",
+      "file_count": 60,
+      "successful_count": 5,
+      "failed_count": 0,
+      "dicom_files": [
+        {
+          "filename": "IM-0003-0060.dcm",
+          "series": "t2_trufi_tra_p2_bh_5",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 41.07126736111111,
+            "std_intensity": 39.88845774893083,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0003-0048.dcm",
+          "series": "t2_trufi_tra_p2_bh_5",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 58.80124782986111,
+            "std_intensity": 59.68984601778554,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0003-0049.dcm",
+          "series": "t2_trufi_tra_p2_bh_5",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 53.59532335069444,
+            "std_intensity": 53.485829000869025,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0003-0059.dcm",
+          "series": "t2_trufi_tra_p2_bh_5",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 43.86720920138889,
+            "std_intensity": 42.202393835222765,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        },
+        {
+          "filename": "IM-0003-0058.dcm",
+          "series": "t2_trufi_tra_p2_bh_5",
+          "modality": "MR",
+          "body_part": "PELVIS",
+          "study_date": "20220310",
+          "patient_age": "023Y",
+          "patient_sex": "M",
+          "anatomical_landmarks": [
+            "coccyx",
+            "acetabulum",
+            "femoral_head",
+            "pubic_symphysis",
+            "sacroiliac_joints",
+            "sacrum",
+            "ilium",
+            "pelvis"
+          ],
+          "pathologies": [],
+          "measurements": {
+            "image_width_pixels": 320.0,
+            "image_height_pixels": 288.0,
+            "image_area_pixels": 92160.0,
+            "mean_intensity": 47.771755642361114,
+            "std_intensity": 45.16332459478795,
+            "min_intensity": 0.0,
+            "max_intensity": 255.0
+          },
+          "locations": {
+            "image_width_pixels": "full_image",
+            "image_height_pixels": "full_image",
+            "image_area_pixels": "full_image",
+            "mean_intensity": "full_image",
+            "std_intensity": "full_image",
+            "min_intensity": "full_image",
+            "max_intensity": "full_image"
+          },
+          "confidence": 0.7999999999999999
+        }
+      ],
+      "anatomical_findings": [
+        "coccyx",
+        "acetabulum",
+        "femoral_head",
+        "pubic_symphysis",
+        "sacroiliac_joints",
+        "sacrum",
+        "ilium",
+        "pelvis"
+      ],
+      "pathological_findings": [],
+      "measurements": {
+        "image_width_pixels": [
+          320.0,
+          320.0,
+          320.0,
+          320.0,
+          320.0
+        ],
+        "image_height_pixels": [
+          288.0,
+          288.0,
+          288.0,
+          288.0,
+          288.0
+        ],
+        "image_area_pixels": [
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0,
+          92160.0
+        ],
+        "mean_intensity": [
+          41.07126736111111,
+          58.80124782986111,
+          53.59532335069444,
+          43.86720920138889,
+          47.771755642361114
+        ],
+        "std_intensity": [
+          39.88845774893083,
+          59.68984601778554,
+          53.485829000869025,
+          42.202393835222765,
+          45.16332459478795
+        ],
+        "min_intensity": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "max_intensity": [
+          255.0,
+          255.0,
+          255.0,
+          255.0,
+          255.0
+        ]
+      },
+      "confidence_score": 0.06666666666666665
+    }
+  },
+  "overall_findings": {
+    "total_anatomical_landmarks": 11,
+    "total_pathologies": 5,
+    "key_pathologies_count": 1,
+    "most_common_landmarks": [
+      "acetabulum",
+      "sacrum",
+      "ilium",
+      "pelvis",
+      "coccyx"
+    ],
+    "most_common_pathologies": [
+      "structural_abnormality",
+      "asymmetrical_findings",
+      "osteopenia",
+      "degenerative_changes",
+      "fracture_suspicion"
+    ],
+    "series_with_findings": 6,
+    "overall_confidence": 0.16604680581910183
+  },
+  "pathology_summary": {
+    "other": [
+      "structural_abnormality",
+      "fracture_suspicion"
+    ]
+  },
+  "recommendations": [
+    "Clinical correlation recommended",
+    "Follow-up as clinically indicated"
+  ]
+}

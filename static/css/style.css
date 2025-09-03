@@ -2334,3 +2334,77 @@ body {
     background: #fff3cd;
     border-color: #ffeeba;
 }
+/* Brain-specific styles */
+.brain-test .logo-icon i {
+    color: #6f42c1;
+}
+
+.brain-test .test-section h3 i {
+    color: #6f42c1;
+}
+
+.brain-test .test-btn {
+    background: linear-gradient(135deg, #6f42c1, #8e44ad);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.brain-test .test-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(111, 66, 193, 0.3);
+}
+
+.brain-test .upload-warning {
+    background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+    border: 2px solid #ffc107;
+    border-radius: 12px;
+    padding: 16px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.2);
+}
+
+.brain-test .upload-warning strong {
+    color: #856404;
+    font-size: 18px;
+}
+
+.brain-test .upload-warning p {
+    color: #856404;
+    margin: 8px 0 0 0;
+    font-size: 14px;
+}
+
+/* Brain pathology icons */
+.pathology-category.ischemic i {
+    color: #dc3545;
+}
+
+.pathology-category.hemorrhagic i {
+    color: #e74c3c;
+}
+
+.pathology-category.mass_lesions i {
+    color: #8e44ad;
+}
+
+.pathology-category.white_matter i {
+    color: #3498db;
+}
+
+.pathology-category.degenerative i {
+    color: #f39c12;
+}
+
+.pathology-category.structural i {
+    color: #27ae60;
+}
+
+.pathology-category.other i {
+    color: #95a5a6;
+}

@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain MRI Analysis - DICOM Analyzer</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="modern-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">
+                        <h1>Brain MRI Analysis</h1>
+                        <p>Specialized DICOM Analysis for Brain Imaging</p>
+                    </div>
+                </div>
+                <nav class="nav-menu">
+                    <a href="/" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="/pelvis-test" class="nav-link">
+                        <i class="fas fa-bone"></i>
+                        <span>Pelvis Test</span>
+                    </a>
+                    <a href="/brain-test" class="nav-link active">
+                        <i class="fas fa-brain"></i>
+                        <span>Brain Test</span>
+                    </a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Status Section -->
+            <section class="test-section">
+                <h3><i class="fas fa-info-circle"></i> System Status</h3>
+                <div id="status-container">
+                    <p>Ready to analyze brain DICOM files</p>
+                </div>
+            </section>
+
+            <!-- Quick Test Section -->
+            <section class="test-section">
+                <h3><i class="fas fa-play-circle"></i> Quick Brain Test</h3>
+                <p>Analyze the brain folder in the workspace</p>
+                <button class="test-btn" onclick="runQuickBrainTest()">
+                    <i class="fas fa-brain"></i> Run Quick Brain Test
+                </button>
+                <div id="quick-test-results" style="display: none;"></div>
+            </section>
+
+            <!-- Custom Test Section -->
+            <section class="test-section">
+                <h3><i class="fas fa-cog"></i> Custom Brain Test</h3>
+                <p>Analyze a specific brain folder</p>
+                <input type="text" id="brain-folder-path" placeholder="Enter brain folder path" class="folder-input">
+                <button class="test-btn" onclick="runCustomBrainTest()">
+                    <i class="fas fa-search"></i> Analyze Folder
+                </button>
+                <div id="custom-test-results" style="display: none;"></div>
+            </section>
+
+            <!-- File Upload Section -->
+            <section class="test-section">
+                <h3><i class="fas fa-upload"></i> Upload Brain DICOM Files</h3>
+                <div class="upload-warning">
+                    <strong>⚠️ Important:</strong> This system is designed specifically for brain MRI analysis. 
+                    Only upload DICOM files of the brain, cerebral structures, cranial regions, or intracranial areas. 
+                    Other body parts will be rejected to ensure accurate analysis.
+                </div>
+                
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                    </div>
+                    <h4>Drag & Drop Brain DICOM Files Here</h4>
+                    <p>or click to select files</p>
+                    <input type="file" id="fileInput" accept=".dcm,.dicom" multiple style="display: none;">
+                    <button class="upload-btn" onclick="document.getElementById('fileInput').click()">
+                        <i class="fas fa-plus"></i> Select Brain DICOM Files
+                    </button>
+                </div>
+
+                <!-- File List -->
+                <div class="file-list-container" id="fileListContainer" style="display: none;">
+                    <h4>Selected Files:</h4>
+                    <div id="fileList"></div>
+                    <button class="analyze-btn" onclick="uploadBrainFiles()">
+                        <i class="fas fa-play"></i> Analyze Brain Files
+                    </button>
+                </div>
+
+                <!-- Upload Progress -->
+                <div class="upload-progress" id="uploadProgress" style="display: none;">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <div class="progress-details">
+                        <span id="currentStep">Initializing...</span>
+                        <span id="progressPercent">0%</span>
+                        <span id="timeElapsed">0s</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <div id="results-container" style="display: none;">
+                <!-- Results will be populated here -->
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Global variables
+        let selectedFiles = [];
+
+        // File handling
+        function handleFileSelect(event) {
+            const files = Array.from(event.target.files);
+            handleFiles(files);
+        }
+
+        function handleFiles(files) {
+            selectedFiles = files.filter(file => 
+                file.name.toLowerCase().endsWith('.dcm') || 
+                file.name.toLowerCase().endsWith('.dicom')
+            );
+            
+            if (selectedFiles.length === 0) {
+                alert('Please select valid DICOM files (.dcm or .dicom)');
+                return;
+            }
+
+            // Check file sizes (100MB per file, 400MB total)
+            const maxFileSize = 100 * 1024 * 1024; // 100MB
+            const maxTotalSize = 400 * 1024 * 1024; // 400MB
+            
+            let totalSize = 0;
+            for (const file of selectedFiles) {
+                if (file.size > maxFileSize) {
+                    alert(`File ${file.name} is too large (${formatFileSize(file.size)}). Maximum size per file is 100MB.`);
+                    return;
+                }
+                totalSize += file.size;
+            }
+            
+            if (totalSize > maxTotalSize) {
+                alert(`Total file size (${formatFileSize(totalSize)}) exceeds the 400MB limit. Please select fewer files.`);
+                return;
+            }
+
+            displayFileList();
+            document.getElementById('fileListContainer').style.display = 'block';
+        }
+
+        function displayFileList() {
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = '';
+            
+            selectedFiles.forEach((file, index) => {
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                fileItem.innerHTML = `
+                    <span class="file-name">${file.name}</span>
+                    <span class="file-size">${formatFileSize(file.size)}</span>
+                    <button class="remove-file" onclick="removeFile(${index})">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+                fileList.appendChild(fileItem);
+            });
+        }
+
+        function removeFile(index) {
+            selectedFiles.splice(index, 1);
+            if (selectedFiles.length === 0) {
+                document.getElementById('fileListContainer').style.display = 'none';
+            } else {
+                displayFileList();
+            }
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        // Upload and analysis
+        async function uploadBrainFiles() {
+            if (selectedFiles.length === 0) {
+                alert('Please select files to analyze');
+                return;
+            }
+
+            const formData = new FormData();
+            selectedFiles.forEach(file => {
+                formData.append('files', file);
+            });
+
+            // Show progress
+            document.getElementById('uploadProgress').style.display = 'block';
+            document.getElementById('results-container').style.display = 'none';
+            
+            updateProgress('Uploading files...', 10, 'Starting file upload...');
+
+            try {
+                const response = await fetch('/api/brain/upload-files', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                console.log('Upload response received:', result);
+                console.log('Summary:', result.summary);
+                console.log('Full results:', result.full_results);
+
+                if (result.success) {
+                    updateProgress('Analysis complete!', 100, 'Processing results...');
+                    displayResults(result.summary, result.full_results);
+                } else {
+                    throw new Error(result.error || 'Analysis failed');
+                }
+
+            } catch (error) {
+                console.error('Upload error:', error);
+                let errorMessage = 'Analysis failed: ' + error.message;
+                
+                if (error.message.includes('413') || error.message.includes('Request Entity Too Large')) {
+                    errorMessage = 'File size too large! The total size of your DICOM files exceeds the server limit. Please try uploading fewer files at once or compress the files if possible.';
+                } else if (error.message.includes('NetworkError') || error.message.includes('Failed to fetch')) {
+                    errorMessage = 'Network error! Please check your internet connection and try again.';
+                } else if (error.message.includes('timeout')) {
+                    errorMessage = 'Upload timeout! The files are taking too long to upload. Please try smaller files or fewer files at once.';
+                }
+                
+                updateProgress('Error', 100, errorMessage);
+                alert(errorMessage + '\n\nPlease check the console for more details.');
+            }
+        }
+
+        function updateProgress(step, percent, details) {
+            document.getElementById('currentStep').textContent = step;
+            document.getElementById('progressFill').style.width = percent + '%';
+            document.getElementById('progressPercent').textContent = percent + '%';
+            document.getElementById('timeElapsed').textContent = details;
+        }
+
+        function resetUploadArea() {
+            selectedFiles = [];
+            document.getElementById('fileListContainer').style.display = 'none';
+            document.getElementById('uploadProgress').style.display = 'none';
+            document.getElementById('fileInput').value = '';
+        }
+
+        // Test functions
+        async function runQuickBrainTest() {
+            const resultsDiv = document.getElementById('quick-test-results');
+            resultsDiv.style.display = 'block';
+            resultsDiv.innerHTML = '<p>Running quick brain test...</p>';
+
+            try {
+                const response = await fetch('/api/brain/quick-test');
+                const result = await response.json();
+
+                if (result.success) {
+                    resultsDiv.innerHTML = `
+                        <div class="test-results">
+                            <h4>Quick Brain Test Results:</h4>
+                            <p><strong>Total Files:</strong> ${result.summary.total_files}</p>
+                            <p><strong>Successful Analyses:</strong> ${result.summary.successful_analyses}</p>
+                            <p><strong>Key Pathologies:</strong> ${result.summary.key_pathologies_count}</p>
+                            <p><strong>Total Landmarks:</strong> ${result.summary.total_landmarks}</p>
+                            <button class="view-details-btn" onclick="displayResults(${JSON.stringify(result.summary)}, ${JSON.stringify(result.full_results)})">
+                                View Detailed Results
+                            </button>
+                        </div>
+                    `;
+                } else {
+                    resultsDiv.innerHTML = `<p class="error">Error: ${result.error}</p>`;
+                }
+            } catch (error) {
+                resultsDiv.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+            }
+        }
+
+        async function runCustomBrainTest() {
+            const folderPath = document.getElementById('brain-folder-path').value.trim();
+            if (!folderPath) {
+                alert('Please enter a folder path');
+                return;
+            }
+
+            const resultsDiv = document.getElementById('custom-test-results');
+            resultsDiv.style.display = 'block';
+            resultsDiv.innerHTML = '<p>Running custom brain test...</p>';
+
+            try {
+                const response = await fetch('/api/brain/test', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ folder_path: folderPath })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    resultsDiv.innerHTML = `
+                        <div class="test-results">
+                            <h4>Custom Brain Test Results:</h4>
+                            <p><strong>Total Files:</strong> ${result.summary.total_files}</p>
+                            <p><strong>Successful Analyses:</strong> ${result.summary.successful_analyses}</p>
+                            <p><strong>Key Pathologies:</strong> ${result.summary.key_pathologies_count}</p>
+                            <p><strong>Total Landmarks:</strong> ${result.summary.total_landmarks}</p>
+                            <button class="view-details-btn" onclick="displayResults(${JSON.stringify(result.summary)}, ${JSON.stringify(result.full_results)})">
+                                View Detailed Results
+                            </button>
+                        </div>
+                    `;
+                } else {
+                    resultsDiv.innerHTML = `<p class="error">Error: ${result.error}</p>`;
+                }
+            } catch (error) {
+                resultsDiv.innerHTML = `<p class="error">Error: ${error.message}</p>`;
+            }
+        }
+
+        // Display results
+        function displayResults(summary, fullResults) {
+            console.log('Displaying results:', summary, fullResults);
+            
+            const container = document.getElementById('results-container');
+            container.style.display = 'block';
+            
+            let html = `
+                <section class="test-section results-section">
+                    <h3><i class="fas fa-chart-bar"></i> Brain Analysis Results</h3>
+                    
+                    <!-- Summary -->
+                    <div class="results-summary">
+                        <h4>Analysis Summary</h4>
+                        <div class="summary-grid">
+                            <div class="summary-item">
+                                <i class="fas fa-file-medical"></i>
+                                <span class="label">Total Files</span>
+                                <span class="value">${summary.total_files}</span>
+                            </div>
+                            <div class="summary-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="label">Successful Analyses</span>
+                                <span class="value">${summary.successful_analyses}</span>
+                            </div>
+                            <div class="summary-item">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span class="label">Key Pathologies</span>
+                                <span class="value">${summary.key_pathologies_count}</span>
+                            </div>
+                            <div class="summary-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span class="label">Anatomical Landmarks</span>
+                                <span class="value">${summary.total_landmarks}</span>
+                            </div>
+                        </div>
+                    </div>
+            `;
+
+            // Pathology Summary
+            if (fullResults.pathology_summary && Object.keys(fullResults.pathology_summary).length > 0) {
+                html += `
+                    <div class="pathology-summary">
+                        <h4><i class="fas fa-stethoscope"></i> Key Pathological Findings</h4>
+                        <div class="pathology-categories">
+                `;
+                
+                for (const [category, findings] of Object.entries(fullResults.pathology_summary)) {
+                    if (findings && findings.length > 0) {
+                        const priority = getPathologyPriority(category);
+                        html += `
+                            <div class="pathology-category ${priority}">
+                                <h5><i class="${getPathologyIcon(category)}"></i> ${formatCategoryName(category)}</h5>
+                                <ul>
+                                    ${findings.map(finding => `<li>${formatFinding(finding)}</li>`).join('')}
+                                </ul>
+                            </div>
+                        `;
+                    }
+                }
+                
+                html += `
+                        </div>
+                    </div>
+                `;
+            } else {
+                html += `
+                    <div class="no-pathology">
+                        <h4><i class="fas fa-check-circle"></i> No Pathological Findings</h4>
+                        <p>No significant pathological findings were detected in this brain MRI study.</p>
+                    </div>
+                `;
+            }
+
+            // Recommendations
+            if (fullResults.recommendations && fullResults.recommendations.length > 0) {
+                html += `
+                    <div class="recommendations">
+                        <h4><i class="fas fa-lightbulb"></i> Clinical Recommendations</h4>
+                        <ul>
+                            ${fullResults.recommendations.map(rec => `<li>${rec}</li>`).join('')}
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Series Information
+            if (fullResults.series_results) {
+                html += `
+                    <div class="series-information">
+                        <h4><i class="fas fa-layer-group"></i> Series Information</h4>
+                `;
+                
+                for (const [seriesName, seriesData] of Object.entries(fullResults.series_results)) {
+                    html += `
+                        <div class="series-item">
+                            <h5>${formatSeriesName(seriesName)}</h5>
+                            <p><strong>Files:</strong> ${seriesData.file_count || 0} | 
+                               <strong>Successful:</strong> ${seriesData.successful_count || 0} | 
+                               <strong>Failed:</strong> ${seriesData.failed_count || 0}</p>
+                    `;
+                    
+                    if (seriesData.anatomical_landmarks && seriesData.anatomical_landmarks.length > 0) {
+                        html += `<p><strong>Landmarks:</strong> ${seriesData.anatomical_landmarks.join(', ')}</p>`;
+                    }
+                    
+                    if (seriesData.pathologies && seriesData.pathologies.length > 0) {
+                        html += `<p><strong>Pathologies:</strong> ${seriesData.pathologies.join(', ')}</p>`;
+                    }
+                    
+                    html += '</div>';
+                }
+                
+                html += '</div>';
+            }
+
+            html += '</section>';
+            
+            container.innerHTML = html;
+        }
+
+        // Helper functions
+        function getPathologyPriority(category) {
+            const priorities = {
+                'ischemic': 'high-priority',
+                'hemorrhagic': 'high-priority',
+                'mass_lesions': 'high-priority',
+                'white_matter': 'medium-priority',
+                'degenerative': 'medium-priority',
+                'structural': 'low-priority',
+                'other': 'low-priority'
+            };
+            return priorities[category] || 'low-priority';
+        }
+
+        function getPathologyIcon(category) {
+            const icons = {
+                'ischemic': 'fas fa-tint',
+                'hemorrhagic': 'fas fa-droplet',
+                'mass_lesions': 'fas fa-circle-exclamation',
+                'white_matter': 'fas fa-snowflake',
+                'degenerative': 'fas fa-arrow-down',
+                'structural': 'fas fa-cube',
+                'other': 'fas fa-question'
+            };
+            return icons[category] || 'fas fa-question';
+        }
+
+        function formatCategoryName(category) {
+            return category.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        function formatFinding(finding) {
+            return finding.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        function formatSeriesName(seriesName) {
+            return seriesName.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+        }
+
+        // Event listeners
+        document.getElementById('fileInput').addEventListener('change', handleFileSelect);
+
+        // Drag and drop
+        const uploadArea = document.getElementById('uploadArea');
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('drag-over');
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('drag-over');
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('drag-over');
+            const files = Array.from(e.dataTransfer.files);
+            handleFiles(files);
+        });
+    </script>
+</body>
+</html>

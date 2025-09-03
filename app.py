@@ -26,6 +26,7 @@ from real_dicom_analyzer import RealDicomAnalyzer
 from enhanced_pathology_detector import detect_enhanced_pathologies
 from database_manager import db_manager
 from pelvis_test_analyzer import PelvisTestAnalyzer
+from brain_test_analyzer import BrainTestAnalyzer
 import hashlib
 
 # Load environment variables
@@ -72,6 +73,9 @@ except Exception as e:
 
 # Initialize Pelvis Test Analyzer
 pelvis_analyzer = PelvisTestAnalyzer()
+
+# Initialize Brain Test Analyzer
+brain_analyzer = BrainTestAnalyzer()
 
 
 class GeminiAnalyzer:
@@ -900,6 +904,11 @@ def index():
 def pelvis_test():
     """Pelvis test analysis page"""
     return render_template('pelvis_test.html')
+
+@app.route('/brain-test')
+def brain_test():
+    """Brain test analysis page"""
+    return render_template('brain_test.html')
 
 
 @app.route('/api/health')
@@ -3390,6 +3399,161 @@ def get_analysis_progress(session_id):
         })
     except Exception as e:
         return jsonify({'error': str(e)}), 500
+
+# Brain Test API Endpoints
+@app.route('/api/brain/test', methods=['POST'])
+def brain_test_api():
+    """Run a brain test analysis"""
+    try:
+        data = request.get_json()
+        folder_path = data.get('folder_path')
+        
+        if not folder_path or not os.path.exists(folder_path):
+            return jsonify({'error': 'Invalid folder path'}), 400
+        
+        # Run brain analysis
+        results = brain_analyzer.analyze_brain_folder(folder_path)
+        
+        # Create summary for display
+        summary = {
+            'total_files': results.get('total_files', 0),
+            'successful_analyses': results.get('successful_analyses', 0),
+            'total_pathologies': results.get('overall_findings', {}).get('total_pathologies', 0),
+            'key_pathologies_count': results.get('overall_findings', {}).get('key_pathologies_count', 0),
+            'total_landmarks': results.get('overall_findings', {}).get('total_anatomical_landmarks', 0),
+            'pathology_categories': list(results.get('pathology_summary', {}).keys()),
+            'recommendations': results.get('recommendations', []),
+            'confidence': results.get('overall_findings', {}).get('overall_confidence', 0.0)
+        }
+        
+        return jsonify({
+            'success': True,
+            'summary': summary,
+            'full_results': results
+        })
+        
+    except Exception as e:
+        logger.error(f"Error in brain test: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/brain/quick-test')
+def quick_brain_test():
+    """Quick brain test using the brain folder"""
+    try:
+        brain_folder = 'brain'
+        
+        if not os.path.exists(brain_folder):
+            return jsonify({'error': 'Brain folder not found'}), 404
+        
+        # Run brain analysis
+        results = brain_analyzer.analyze_brain_folder(brain_folder)
+        
+        # Create summary for display
+        summary = {
+            'total_files': results.get('total_files', 0),
+            'successful_analyses': results.get('successful_analyses', 0),
+            'total_pathologies': results.get('overall_findings', {}).get('total_pathologies', 0),
+            'key_pathologies_count': results.get('overall_findings', {}).get('key_pathologies_count', 0),
+            'total_landmarks': results.get('overall_findings', {}).get('total_anatomical_landmarks', 0),
+            'pathology_categories': list(results.get('pathology_summary', {}).keys()),
+            'recommendations': results.get('recommendations', []),
+            'confidence': results.get('overall_findings', {}).get('overall_confidence', 0.0)
+        }
+        
+        return jsonify({
+            'success': True,
+            'summary': summary,
+            'full_results': results
+        })
+        
+    except Exception as e:
+        logger.error(f"Error in quick brain test: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/brain/upload-files', methods=['POST'])
+def upload_brain_files():
+    """Upload and analyze brain DICOM files"""
+    try:
+        if 'files' not in request.files:
+            return jsonify({'success': False, 'error': 'No files provided'}), 400
+        
+        files = request.files.getlist('files')
+        if not files or all(file.filename == '' for file in files):
+            return jsonify({'success': False, 'error': 'No files selected'}), 400
+        
+        # Create temporary directory for analysis
+        temp_dir = tempfile.mkdtemp()
+        uploaded_files = []
+        
+        # Save uploaded files
+        for file in files:
+            if file and file.filename:
+                # Check file extension
+                if not file.filename.lower().endswith(('.dcm', '.dicom')):
+                    continue
+                
+                # Save file to temp directory
+                filename = secure_filename(file.filename)
+                filepath = os.path.join(temp_dir, filename)
+                file.save(filepath)
+                uploaded_files.append(filepath)
+                print(f"Saved brain file: {filename} to {filepath}")
+        
+        if not uploaded_files:
+            shutil.rmtree(temp_dir)
+            return jsonify({'success': False, 'error': 'No valid DICOM files found'}), 400
+        
+        print(f"Successfully saved {len(uploaded_files)} brain DICOM files to {temp_dir}")
+        
+        # Analyze the uploaded files
+        print(f"Starting brain analysis of {len(uploaded_files)} uploaded files")
+        
+        try:
+            results = brain_analyzer.analyze_brain_folder(temp_dir)
+            print(f"Brain analysis completed. Results: {results}")
+            
+            # Debug: Check what's in the results
+            print(f"Total brain files in results: {results.get('total_files', 0)}")
+            print(f"Successful brain analyses: {results.get('successful_analyses', 0)}")
+            print(f"Brain series results keys: {list(results.get('series_results', {}).keys())}")
+            
+        except Exception as analysis_error:
+            print(f"Brain analysis error: {analysis_error}")
+            import traceback
+            traceback.print_exc()
+            shutil.rmtree(temp_dir)
+            raise analysis_error
+        
+        # Clean up temp directory
+        shutil.rmtree(temp_dir)
+        
+        # Create summary for display
+        summary = {
+            'total_files': results.get('total_files', 0),
+            'successful_analyses': results.get('successful_analyses', 0),
+            'total_pathologies': results.get('overall_findings', {}).get('total_pathologies', 0),
+            'key_pathologies_count': results.get('overall_findings', {}).get('key_pathologies_count', 0),
+            'total_landmarks': results.get('overall_findings', {}).get('total_anatomical_landmarks', 0),
+            'pathology_categories': list(results.get('pathology_summary', {}).keys()),
+            'recommendations': results.get('recommendations', []),
+            'confidence': results.get('overall_findings', {}).get('overall_confidence', 0.0)
+        }
+        
+        return jsonify({
+            'success': True,
+            'summary': summary,
+            'full_results': results,
+            'message': f'Successfully analyzed {len(uploaded_files)} brain files'
+        })
+        
+    except Exception as e:
+        print(f"Error in brain file upload analysis: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
 
 
 if __name__ == '__main__':
