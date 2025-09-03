@@ -856,7 +856,11 @@
                             <div class="pathology-category ${categoryPriority}">
                                 <h5>${categoryIcon} ${category.charAt(0).toUpperCase() + category.slice(1)} (${categoryPriority.toUpperCase()})</h5>
                                 <ul class="pathology-list">
-                                    ${pathologies.map(p => `<li>${p}</li>`).join('')}
+                                    ${pathologies.map(p => {
+                                        const frequency = fullResults.overall_findings?.pathology_frequency?.[p] || 1;
+                                        const frequencyText = frequency > 1 ? ` (${frequency} files)` : '';
+                                        return `<li>${p}${frequencyText}</li>`;
+                                    }).join('')}
                                 </ul>
                             </div>
                         `;
@@ -931,7 +935,7 @@
                                <strong>Successful:</strong> ${seriesData.successful_count} | 
                                <strong>Confidence:</strong> ${((seriesData.confidence_score || 0) * 100).toFixed(1)}%</p>
                             <p><strong>Anatomical Landmarks:</strong> ${seriesData.anatomical_landmarks?.join(', ') || 'None'}</p>
-                            <p><strong>Pathologies:</strong> ${seriesData.pathologies?.join(', ') || 'None'}</p>
+                            <p><strong>Pathologies:</strong> ${formatPathologies(seriesData.pathologies)}</p>
                         </div>
                     `;
                     
@@ -1004,6 +1008,24 @@
             link.href = URL.createObjectURL(dataBlob);
             link.download = `pelvis_analysis_${new Date().toISOString().slice(0,19).replace(/:/g,'-')}.json`;
             link.click();
+        }
+        
+        // Helper function to clean and format pathologies
+        function formatPathologies(pathologies) {
+            if (!pathologies || !Array.isArray(pathologies)) return 'None';
+            
+            // Remove duplicates and sort
+            const uniquePathologies = [...new Set(pathologies)];
+            
+            // Format with frequency if available
+            if (currentResults?.overall_findings?.pathology_frequency) {
+                return uniquePathologies.map(p => {
+                    const frequency = currentResults.overall_findings.pathology_frequency[p] || 1;
+                    return frequency > 1 ? `${p} (${frequency} files)` : p;
+                }).join(', ');
+            }
+            
+            return uniquePathologies.join(', ');
         }
         
         // Helper functions for pathology categories

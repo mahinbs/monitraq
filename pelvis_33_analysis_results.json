@@ -1,5 +1,5 @@
 {
-  "analysis_date": "2025-09-03T23:07:28.928674",
+  "analysis_date": "2025-09-03T23:15:07.438228",
   "folder_path": "pelvis_33",
   "total_files": 93,
   "successful_analyses": 93,
@@ -3054,23 +3054,32 @@
     "most_common_landmarks": [],
     "most_common_pathologies": [
       "linear_structure_detected",
-      "tissue_disruption",
       "inflammatory_changes",
-      "degenerative_changes",
-      "fluid_collection_suspicion"
+      "tissue_disruption",
+      "fluid_collection_suspicion",
+      "degenerative_changes"
     ],
     "series_with_findings": 2,
-    "overall_confidence": 0.85
+    "overall_confidence": 0.85,
+    "pathology_frequency": {
+      "linear_structure_detected": 93,
+      "inflammatory_changes": 93,
+      "tissue_disruption": 93,
+      "fluid_collection_suspicion": 93,
+      "degenerative_changes": 93,
+      "osteopenia_suspicion": 36,
+      "structural_abnormality": 30
+    }
   },
   "pathology_summary": {
     "other": [
       "linear_structure_detected",
-      "tissue_disruption",
       "inflammatory_changes",
-      "degenerative_changes",
+      "tissue_disruption",
       "fluid_collection_suspicion",
-      "structural_abnormality",
-      "osteopenia_suspicion"
+      "degenerative_changes",
+      "osteopenia_suspicion",
+      "structural_abnormality"
     ]
   },
   "recommendations": [

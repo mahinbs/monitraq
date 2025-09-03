@@ -457,19 +457,27 @@ class Pelvis33Analyzer:
     def _post_process_results(self, results: Dict[str, Any]) -> Dict[str, Any]:
         """Post-process analysis results"""
         try:
-            # Aggregate findings across series
+            # Aggregate findings across series with proper deduplication
             all_pathologies = []
             all_landmarks = []
+            pathology_counts = {}  # Track frequency of each pathology
             
             for series_name, series_data in results['series_results'].items():
                 if series_data.get('pathologies'):
-                    all_pathologies.extend(series_data['pathologies'])
+                    for pathology in series_data['pathologies']:
+                        if pathology not in pathology_counts:
+                            pathology_counts[pathology] = 0
+                        pathology_counts[pathology] += 1
+                        if pathology not in all_pathologies:
+                            all_pathologies.append(pathology)
+                
                 if series_data.get('anatomical_landmarks'):
-                    all_landmarks.extend(series_data['anatomical_landmarks'])
+                    for landmark in series_data['anatomical_landmarks']:
+                        if landmark not in all_landmarks:
+                            all_landmarks.append(landmark)
             
-            # Remove duplicates
-            all_pathologies = list(set(all_pathologies))
-            all_landmarks = list(set(all_landmarks))
+            # Sort pathologies by frequency (most common first)
+            all_pathologies.sort(key=lambda x: pathology_counts.get(x, 0), reverse=True)
             
             # Count pathologies by category
             pathology_summary = {}
@@ -495,7 +503,8 @@ class Pelvis33Analyzer:
                 'most_common_landmarks': all_landmarks[:5] if all_landmarks else [],
                 'most_common_pathologies': all_pathologies[:5] if all_pathologies else [],
                 'series_with_findings': len([s for s in results['series_results'].values() if s.get('pathologies')]),
-                'overall_confidence': 0.85
+                'overall_confidence': 0.85,
+                'pathology_frequency': pathology_counts  # Add frequency data
             }
             
             # Generate recommendations
