@@ -25,6 +25,7 @@ except:
 from real_dicom_analyzer import RealDicomAnalyzer
 from enhanced_pathology_detector import detect_enhanced_pathologies
 from database_manager import db_manager
+from pelvis_test_analyzer import PelvisTestAnalyzer
 import hashlib
 
 # Load environment variables
@@ -36,9 +37,13 @@ logger = logging.getLogger(__name__)
 
 # Initialize Flask app
 app = Flask(__name__)
-app.config['MAX_CONTENT_LENGTH'] = 50 * 1024 * 1024  # 50MB max file size
+app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024  # 500MB max file size (increased from 50MB)
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'your-secret-key-here')
+
+# Additional configurations for large file uploads
+app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 # Enable CORS
 CORS(app)
@@ -64,6 +69,9 @@ except Exception as e:
         analyzer = None
 
 # Initialize Gemini AI for enhanced report generation
+
+# Initialize Pelvis Test Analyzer
+pelvis_analyzer = PelvisTestAnalyzer()
 
 
 class GeminiAnalyzer:
@@ -887,6 +895,11 @@ def refresh_page():
 def index():
     """Main page with modern UI"""
     return render_template('index.html')
+
+@app.route('/pelvis-test')
+def pelvis_test():
+    """Pelvis test analysis page"""
+    return render_template('pelvis_test.html')
 
 
 @app.route('/api/health')
@@ -3150,6 +3163,235 @@ def generate_professional_pdf_report(analysis_result: Dict[str, Any]) -> str:
         return None
 
 
+# Pelvis Test Analysis Endpoints
+@app.route('/api/pelvis/test', methods=['POST'])
+def test_pelvis_folder():
+    """Test pelvis folder analysis endpoint"""
+    try:
+        data = request.get_json()
+        folder_path = data.get('folder_path', 'pelvis')
+        
+        if not os.path.exists(folder_path):
+            return jsonify({'error': f'Folder not found: {folder_path}'}), 404
+        
+        logger.info(f"Starting pelvis test analysis for: {folder_path}")
+        
+        # Perform pelvis analysis
+        results = pelvis_analyzer.analyze_pelvis_folder(folder_path)
+        
+        # Save results to database or file
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        results_file = f"pelvis_test_results_{timestamp}.json"
+        
+        with open(results_file, 'w') as f:
+            json.dump(results, f, indent=2, default=str)
+        
+        return jsonify({
+            'success': True,
+            'message': 'Pelvis test analysis completed',
+            'results': results,
+            'results_file': results_file
+        })
+        
+    except Exception as e:
+        logger.error(f"Error in pelvis test analysis: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/pelvis/results/<filename>')
+def get_pelvis_results(filename):
+    """Get pelvis test results from file"""
+    try:
+        file_path = filename
+        if not os.path.exists(file_path):
+            return jsonify({'error': 'Results file not found'}), 404
+        
+        with open(file_path, 'r') as f:
+            results = json.load(f)
+        
+        return jsonify({
+            'success': True,
+            'results': results
+        })
+        
+    except Exception as e:
+        logger.error(f"Error reading pelvis results: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/pelvis/status')
+def get_pelvis_status():
+    """Get pelvis test system status"""
+    try:
+        pelvis_folder_exists = os.path.exists('pelvis')
+        available_series = []
+        
+        if pelvis_folder_exists:
+            available_series = [d for d in os.listdir('pelvis') if os.path.isdir(os.path.join('pelvis', d))]
+        
+        return jsonify({
+            'success': True,
+            'pelvis_folder_available': pelvis_folder_exists,
+            'available_series': available_series,
+            'total_series': len(available_series),
+            'analyzer_status': 'ready'
+        })
+        
+    except Exception as e:
+        logger.error(f"Error getting pelvis status: {e}")
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/api/pelvis/quick-test')
+def quick_pelvis_test():
+    """Run quick pelvis test on existing folder"""
+    try:
+        print("Starting quick pelvis test analysis")
+        results = pelvis_analyzer.analyze_pelvis_folder("pelvis")
+        
+        # Create summary for display
+        summary = {
+            'total_files': results.get('total_files', 0),
+            'successful_analyses': results.get('successful_analyses', 0),
+            'total_pathologies': results.get('overall_findings', {}).get('total_pathologies', 0),
+            'key_pathologies_count': results.get('overall_findings', {}).get('key_pathologies_count', 0),
+            'total_landmarks': results.get('overall_findings', {}).get('total_anatomical_landmarks', 0),
+            'pathology_categories': list(results.get('pathology_summary', {}).keys()),
+            'recommendations': results.get('recommendations', []),
+            'confidence': results.get('overall_findings', {}).get('overall_confidence', 0.0)
+        }
+        
+        return jsonify({
+            'success': True,
+            'summary': summary,
+            'full_results': results
+        })
+    except Exception as e:
+        print(f"Error in quick pelvis test: {e}")
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/pelvis/upload-files', methods=['POST'])
+def upload_pelvis_files():
+    """Handle file uploads for pelvis analysis"""
+    try:
+        if 'files' not in request.files:
+            return jsonify({'success': False, 'error': 'No files provided'}), 400
+        
+        files = request.files.getlist('files')
+        if not files or files[0].filename == '':
+            return jsonify({'success': False, 'error': 'No files selected'}), 400
+        
+        # Create temporary directory for uploaded files
+        import tempfile
+        import os
+        import shutil
+        
+        temp_dir = tempfile.mkdtemp(prefix='pelvis_upload_')
+        uploaded_files = []
+        
+        print(f"Processing {len(files)} uploaded files")
+        
+        for file in files:
+            if file and file.filename:
+                # Validate file extension
+                if not file.filename.lower().endswith(('.dcm', '.dicom')):
+                    print(f"Skipping non-DICOM file: {file.filename}")
+                    continue
+                
+                # Save file to temp directory
+                filename = secure_filename(file.filename)
+                filepath = os.path.join(temp_dir, filename)
+                file.save(filepath)
+                uploaded_files.append(filepath)
+                print(f"Saved file: {filename} to {filepath}")
+        
+        if not uploaded_files:
+            shutil.rmtree(temp_dir)
+            return jsonify({'success': False, 'error': 'No valid DICOM files found'}), 400
+        
+        print(f"Successfully saved {len(uploaded_files)} DICOM files to {temp_dir}")
+        
+        # Analyze the uploaded files
+        print(f"Starting analysis of {len(uploaded_files)} uploaded files")
+        
+        # Create a simple progress tracking
+        analysis_progress = {
+            'status': 'analyzing',
+            'current_step': 'Starting DICOM analysis...',
+            'progress': 0,
+            'total_files': len(uploaded_files),
+            'processed_files': 0
+        }
+        
+        # Store progress in a simple way (in production, use Redis or database)
+        import json
+        progress_file = os.path.join(temp_dir, 'progress.json')
+        with open(progress_file, 'w') as f:
+            json.dump(analysis_progress, f)
+        
+        try:
+            results = pelvis_analyzer.analyze_pelvis_folder(temp_dir)
+            print(f"Analysis completed. Results: {results}")
+            
+            # Debug: Check what's in the results
+            print(f"Total files in results: {results.get('total_files', 0)}")
+            print(f"Successful analyses: {results.get('successful_analyses', 0)}")
+            print(f"Series results keys: {list(results.get('series_results', {}).keys())}")
+            
+        except Exception as analysis_error:
+            print(f"Analysis error: {analysis_error}")
+            import traceback
+            traceback.print_exc()
+            shutil.rmtree(temp_dir)
+            raise analysis_error
+        
+        # Clean up temp directory
+        shutil.rmtree(temp_dir)
+        
+        # Create summary for display
+        summary = {
+            'total_files': results.get('total_files', 0),
+            'successful_analyses': results.get('successful_analyses', 0),
+            'total_pathologies': results.get('overall_findings', {}).get('total_pathologies', 0),
+            'key_pathologies_count': results.get('overall_findings', {}).get('key_pathologies_count', 0),
+            'total_landmarks': results.get('overall_findings', {}).get('total_anatomical_landmarks', 0),
+            'pathology_categories': list(results.get('pathology_summary', {}).keys()),
+            'recommendations': results.get('recommendations', []),
+            'confidence': results.get('overall_findings', {}).get('overall_confidence', 0.0)
+        }
+        
+        return jsonify({
+            'success': True,
+            'summary': summary,
+            'full_results': results,
+            'message': f'Successfully analyzed {len(uploaded_files)} files'
+        })
+        
+    except Exception as e:
+        print(f"Error in file upload analysis: {e}")
+        import traceback
+        traceback.print_exc()
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
+@app.route('/api/pelvis/progress/<session_id>')
+def get_analysis_progress(session_id):
+    """Get analysis progress for a specific session"""
+    try:
+        # In a real implementation, this would check a database or cache
+        # For now, return a mock progress
+        return jsonify({
+            'status': 'completed',
+            'progress': 100,
+            'current_step': 'Analysis completed',
+            'message': 'All files processed successfully'
+        })
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+
 if __name__ == '__main__':
     # Run the app
-    app.run(debug=True, host='0.0.0.0', port=8083)
+    app.run(debug=True, host='0.0.0.0', port=8084)
